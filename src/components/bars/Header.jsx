@@ -6,7 +6,7 @@ import Logo from '@/assets/images/logo.png'
 
 export const Header = () => {
     return (
-        <header className="flex justify-around items-center my-9 mx-5">
+        <header className="flex justify-around items-center mt-9 mb-5 mx-5">
 
             {/* Logo */}
             <img src={Logo} alt='Go Digital Logo' width={140} />

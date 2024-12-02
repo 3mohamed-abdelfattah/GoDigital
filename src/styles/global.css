@@ -1,0 +1,28 @@
+/* Manrope Font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    /* outline: 1px solid red; */
+}
+
+/* Global Style */
+body {
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hide Scroll Bar */
+::-webkit-scrollbar {
+    width: 0px;
+}

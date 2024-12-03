@@ -55,3 +55,9 @@ export const SuccessIcon = () => (
         <path d="M16.1429 27.867L26.7311 38L41.8571 20" stroke="#F15D2A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
 );
+
+export const MenuIcon = () => (
+    <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 2H21M2 9H21M2 16H21" stroke="#333132" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+);

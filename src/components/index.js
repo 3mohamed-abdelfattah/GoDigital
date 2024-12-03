@@ -1,6 +1,6 @@
 // Primary Bars 
 export * from './bars/Header'
-export * from './bars/Footer'
+export * from './bars/GetQuote'
 // HomePage Components
 export * from './forHome/HeroSection'
 export * from './forHome/HowWorksSection'

@@ -4,7 +4,10 @@ import '@/styles/slider.css'
 export const SplideSlider = ({ children, image }) => {
     return (
         <SplideSlide>
-            <div className="relative rounded-[32px] max-w-[510px]">
+            <div
+                className="relative rounded-[32px] max-w-[510px] overflow-hidden shadow-lg m-3"
+                style={{ boxShadow: '0px 4px 4px 0px #00000040' }}
+            >
                 {/* image */}
                 <img
                     className="rounded-[32px] w-[510px] h-[500px] object-cover"

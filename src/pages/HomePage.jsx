@@ -1,4 +1,4 @@
-import { Header, HeroSection, HowWorksSection, WhyDigitalSection, ArticlesSection, ServicesSection } from '@/components';
+import { Header, HeroSection, HowWorksSection, WhyDigitalSection, ArticlesSection, ServicesSection, GetQuote } from '@/components';
 
 export const HomePage = () => {
     return (
@@ -9,6 +9,7 @@ export const HomePage = () => {
             <WhyDigitalSection />
             <ArticlesSection />
             <ServicesSection />
+            <GetQuote />
         </main>
     );
 };

@@ -35,7 +35,7 @@ export const ArticlesSection = () => {
                     rewindByDrag: true,
                     arrows: false,
                     pagination: true,
-                    gap: '2rem',
+                    gap: '1rem',
                     perPage: 3,
                     breakpoints: {
                         768: { perPage: 1 }, // Display on mobile
@@ -76,9 +76,8 @@ export const ArticlesSection = () => {
                         Read More
                     </a>
                 </SplideSlider>
-
-
             </Splide>
+
         </main>
     )
 }

@@ -42,7 +42,6 @@ export const ArticlesSection = () => {
                         1900: { perPage: 2 }, // Display on tablet
                     },
                 }}
-                aria-label="Custom Slider"
             >
 
                 {/* Slide 1 */}

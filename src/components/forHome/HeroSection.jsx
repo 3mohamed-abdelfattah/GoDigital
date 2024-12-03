@@ -7,7 +7,7 @@ export const HeroSection = () => {
     return (
         <main className='bg-secondaryBgColor mx-20 rounded-[58px]'>
 
-            {/* First Hero Section [Logo & Titles]*/}
+            {/* First Hero Section [Logo & Titles] */}
             <section
                 className="flex flex-col justify-center items-center bg-primaryBgColor text-center rounded-[58px] text-primaryColor py-12 h-[590px]"
                 style={{ boxShadow: '0 10px 10px rgba(0, 0, 0, 0.2)' }}
@@ -27,6 +27,7 @@ export const HeroSection = () => {
                 <PlaneLabel>Ευθύνης Οδικού Μεταφορέα </PlaneLabel>
                 <PlaneLabel>Εγγυητικές Επιστολές</PlaneLabel>
             </section>
+
         </main>
     )
 }

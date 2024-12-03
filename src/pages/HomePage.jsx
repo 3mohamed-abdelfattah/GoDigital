@@ -1,5 +1,5 @@
-// Components
-import { Header, HeroSection, HowWorksSection, WhyDigitalSection } from '@/components'
+// File: HomePage.tsx
+import { Header, HeroSection, HowWorksSection, WhyDigitalSection, ArticlesSection } from '@/components';
 
 export const HomePage = () => {
     return (
@@ -8,7 +8,7 @@ export const HomePage = () => {
             <HeroSection />
             <HowWorksSection />
             <WhyDigitalSection />
-
+            <ArticlesSection />
         </main>
-    )
-}
+    );
+};

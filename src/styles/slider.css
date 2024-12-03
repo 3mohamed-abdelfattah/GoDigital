@@ -1,0 +1,23 @@
+/* Slider Dots Style */
+.splide__pagination {
+  position: absolute;
+  bottom: -50px;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.splide__pagination__page {
+  width: 12px;
+  height: 12px;
+  background-color: white !important;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.splide__pagination__page.is-active {
+  background-color: #f97316 !important;
+}

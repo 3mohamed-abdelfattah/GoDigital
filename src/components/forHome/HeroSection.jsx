@@ -1,12 +1,11 @@
-import React from 'react'
 // Component
-import { PlaneLabel } from '../custom/PlaneLabel'
+import { PlaneLabel } from '@/components'
 // Images
 import Symbol from '@/assets/images/icon.png'
 
 export const HeroSection = () => {
     return (
-        <main className='bg-secondaryBgColor mx-20  rounded-[58px]'>
+        <main className='bg-secondaryBgColor mx-20 rounded-[58px]'>
 
             {/* First Hero Section [Logo & Titles]*/}
             <section

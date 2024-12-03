@@ -1,6 +1,5 @@
-import React from 'react'
 // Component
-import { CircleDashed } from '../custom/CircleDashed'
+import { CircleDashed } from '@/components'
 // Icons
 import * as Icons from '@/utils/icons.util'
 

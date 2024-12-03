@@ -1,6 +1,5 @@
-import React from 'react'
 // Components
-import { Header, HeroSection, HowWorksSection } from '@/components'
+import { Header, HeroSection, HowWorksSection, WhyDigitalSection } from '@/components'
 
 export const HomePage = () => {
     return (
@@ -8,6 +7,8 @@ export const HomePage = () => {
             <Header />
             <HeroSection />
             <HowWorksSection />
+            <WhyDigitalSection />
+
         </main>
     )
 }

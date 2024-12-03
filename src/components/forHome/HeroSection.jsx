@@ -2,7 +2,7 @@ import React from 'react'
 // Component
 import { PlaneLabel } from '../custom/PlaneLabel'
 // Images
-import Icon from '@/assets/images/icon.png'
+import Symbol from '@/assets/images/icon.png'
 
 export const HeroSection = () => {
     return (
@@ -14,7 +14,7 @@ export const HeroSection = () => {
                 style={{ boxShadow: '0 10px 10px rgba(0, 0, 0, 0.2)' }}
             >
                 {/* Hero Section Logo */}
-                <img src={Icon} alt='Go Digital Icon' width={199} />
+                <img src={Symbol} alt='Go Digital Icon' width={199} />
                 {/* Hero Section Titles */}
                 <h1 className="max-w-[806px] text-6xl font-semibold leading-[81.96px]">Lorem ipsum dolor sit amet consectetur adipiscing</h1>
                 <h2 className="mt-5 mb-6 max-w-[519px] text-[22px] leading-[30.05px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>

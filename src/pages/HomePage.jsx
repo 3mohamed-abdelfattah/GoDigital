@@ -1,14 +1,13 @@
 import React from 'react'
 // Components
-import { Header, HeroSection } from '@/components'
+import { Header, HeroSection, HowWorksSection } from '@/components'
 
 export const HomePage = () => {
     return (
         <main>
             <Header />
             <HeroSection />
-
-            <h1 className="text-center text-[40px] font-bold p-10">How it works</h1>
+            <HowWorksSection />
         </main>
     )
 }

@@ -9,9 +9,9 @@ import ArticleImg3 from '@/assets/images/forHome/article3.jpeg'
 
 export const ArticlesSection = () => {
     return (
-        <main className="flex justify-center gap-20 ml-32 items-center my-48">
+        <main className="flex justify-center gap-10 pl-32 items-center my-48">
 
-            <section className="flex flex-col max-w-[311px]">
+            <section className="flex flex-col w-[311px]">
                 {/* Titles */}
                 <h1 className="font-bold text-[40px]">Άρθρα</h1>
                 <h2 className="text-[22px] leading-[26.63px] my-8 w-[311px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
@@ -32,20 +32,19 @@ export const ArticlesSection = () => {
                 options={{
                     type: 'loop',
                     rewind: true,
+                    drag: 'free',
                     rewindByDrag: true,
+                    snap: true,
                     arrows: false,
+                    fixedWidth: '33rem',
+                    width: '82%',
+                    padding: { right: '60%' },
                     pagination: true,
-                    gap: '1rem',
-                    perPage: 3,
-                    breakpoints: {
-                        768: { perPage: 1 }, // Display on mobile
-                        1900: { perPage: 2 }, // Display on tablet
-                    },
                 }}
             >
 
                 {/* Slide 1 */}
-                <SplideSlider image={ArticleImg1}>
+                <SplideSlider SplideSlider image={ArticleImg1}>
                     <h3 className="text-lg font-bold max-w-[446px] text-[28px]">Lorem ipsum dolor sit amet</h3>
                     <p className="text-sm max-w-[446px] text-[22px] font-semibold leading-[26.63px]">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
@@ -76,8 +75,8 @@ export const ArticlesSection = () => {
                         Read More
                     </a>
                 </SplideSlider>
-            </Splide>
 
+            </Splide>
         </main>
     )
 }

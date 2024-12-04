@@ -4,10 +4,31 @@
 
 **Go Digital** is a modern web application built using React.js that provides a user-friendly platform to showcase various digital services and articles..........................
 
-<div align='center' width='350'>
+<div align='center' width='150px'>
   
   ![icon](https://github.com/user-attachments/assets/60bda9f2-6e73-45fe-98dc-04f861ff8d68)
 </div>
+
+---
+
+## Screenshots
+
+ <table align="center">
+  <tr align='center'>
+    <td><img src="https://github.com/user-attachments/assets/818dbd5d-3f5a-4977-bd3f-ed2f385d0d4b" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/56e936bc-60eb-43e2-bc74-611aa37034a7" alt="Image" /></td>
+  </tr>
+  <tr align='center'>
+    <td><img src="https://github.com/user-attachments/assets/c5e877cd-f432-40dc-86e8-23b36151c408" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/9bbdad66-9967-489d-9ac0-8dc35d3ad6f2" alt="Image" /></td>
+  </tr>
+  <tr align='center'>
+    <td><img src="https://github.com/user-attachments/assets/0578a44e-f131-4c03-8da0-179fe45ffaac" alt="Image" /></td>
+    <td><img src="https://github.com/user-attachments/assets/55941e61-48ea-4083-8500-43f57189f00c" alt="Image" /></td>
+  </tr>
+</table>
+
+---
 
 ## Project Structure
 

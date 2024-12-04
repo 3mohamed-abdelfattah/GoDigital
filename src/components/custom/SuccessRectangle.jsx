@@ -4,11 +4,11 @@ import * as Icons from '@/utils/icons.util'
 export const SuccessRectangle = ({ children = 'Add your text' }) => {
     return (
         <main
-            className="flex flex-col justify-evenly gap-6 items-center w-[278px] h-[160px] bg-white p-[26px] rounded-[20px]"
+            className="flex flex-col justify-evenly gap-1 sm:gap-6 items-center w-40 h-32 vsm:w-44 vsm:h-36 sm:w-[278px] sm:h-[160px] bg-primaryColor sm:p-[26px] rounded-[20px]"
             style={{ boxShadow: ' 0px 2px 4px 0px #00000026 inset' }}
         >
             <div><Icons.SuccessIcon /></div>
-            <h3 className="text-lg font-semibold leading-[24.59px] text-center">{children}</h3>
+            <h3 className="text-sm vsm:text-base sm:text-lg font-semibold sm:leading-[24.59px] text-center">{children}</h3>
         </main>
     )
 }

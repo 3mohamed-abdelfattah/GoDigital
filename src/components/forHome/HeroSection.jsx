@@ -5,7 +5,7 @@ import Symbol from '@/assets/images/icon.png'
 
 export const HeroSection = () => {
     return (
-        <main className='bg-secondaryBgColor mx-6 md:mx-20 rounded-3xl md:rounded-[58px]'>
+        <main className='bg-secondaryBgColor mx-6 lg:mx-20 rounded-3xl md:rounded-[58px]'>
 
             {/* First Hero Section [Logo & Titles] */}
             <section

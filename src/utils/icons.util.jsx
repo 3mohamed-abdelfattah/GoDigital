@@ -80,7 +80,12 @@ export const CashIcon = () => (
 );
 
 export const SuccessIcon = () => (
-    <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+        className="w-10 h-10 sm:w-[58px] sm:h-[58px]"
+        viewBox="0 0 58 58"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
         <path fillRule="evenodd" clipRule="evenodd" d="M29 2C43.9117 2 56 14.0883 56 29C56 43.9117 43.9117 56 29 56C14.0883 56 2 43.9117 2 29C2 14.0883 14.0883 2 29 2Z" stroke="#F15D2A" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
         <path d="M16.1429 27.867L26.7311 38L41.8571 20" stroke="#F15D2A" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
     </svg>

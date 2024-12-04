@@ -6,7 +6,7 @@ export const CircleDashed = ({ children, title }) => {
                 {children}
             </span>
             {/* title */}
-            <p className="absolute left-32 md:left-auto md:-bottom-[71px] font-semibold lg:text-xl leading-6 text-center text-secondaryColor w-28 sm:w-40 lg:w-[203px]">{title}</p>
+            <p className="absolute left-32 sm:left-auto sm:-bottom-[71px] font-semibold lg:text-xl leading-6 text-center text-secondaryColor w-28 sm:w-40 lg:w-[203px]">{title}</p>
         </section>
     )
 }

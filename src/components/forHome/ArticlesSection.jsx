@@ -1,15 +1,15 @@
 // Splide Library
-import { Splide } from '@splidejs/react-splide';
-import { SplideSlider } from '@/components';
-import '@splidejs/react-splide/css';
+import { Splide } from "@splidejs/react-splide";
+import { SplideSlider } from "@/components";
+import "@splidejs/react-splide/css";
 // Images
-import ArticleImg1 from '@/assets/images/forHome/article1.jpeg'
-import ArticleImg2 from '@/assets/images/forHome/article2.jpeg'
-import ArticleImg3 from '@/assets/images/forHome/article3.jpeg'
+import ArticleImg1 from "@/assets/images/forHome/article1.jpeg"
+import ArticleImg2 from "@/assets/images/forHome/article2.jpeg"
+import ArticleImg3 from "@/assets/images/forHome/article3.jpeg"
 
 export const ArticlesSection = () => {
     return (
-        <main className="flex flex-col lg:flex-row justify-end lg:justify-center gap-10 lg:pl-32 items-center my-16 lg:my-48 overflow-hidden">
+        <main className="flex flex-col lg:flex-row justify-end lg:justify-center gap-10 lg:pl-32 items-center my-8 sm:my-16 lg:my-48 overflow-hidden">
 
             <section className="flex flex-col w-3/4 lg:w-[311px] mb-12 lg:mb-0">
                 {/* Titles */}
@@ -18,7 +18,7 @@ export const ArticlesSection = () => {
                 {/* More Button */}
                 <button
                     className="w-32 sm:w-[213px] h-12 sm:h-[65px] rounded-[10px] sm:text-lg font-bold bg-secondaryColor text-primaryColor hover:bg-primaryBgColor transition_all"
-                    style={{ boxShadow: '0px 4px 4px 0px #00000026' }}
+                    style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
                 >
                     Περισσότερα
                 </button>
@@ -30,23 +30,23 @@ export const ArticlesSection = () => {
             {/* Splide Properties */}
             <Splide
                 options={{
-                    type: 'loop',
+                    type: "loop",
                     rewind: true,
-                    drag: 'free',
+                    drag: "free",
                     rewindByDrag: true,
                     snap: true,
                     arrows: false,
-                    fixedWidth: '33rem',
-                    width: '82%',
-                    padding: { right: '60%' },
+                    fixedWidth: "33rem",
+                    width: "82%",
+                    padding: { right: "60%" },
                     pagination: true,
                     breakpoints: {
                         1024: {
-                            width: '100%', // Full width for screens smaller than 1024px
-                            padding: { right: '0%' },
+                            width: "100%", // Full width for screens smaller than 1024px
+                            padding: { right: "0%" },
                         },
                         640: {
-                            fixedWidth: '25rem', // Adjust fixed width for screens smaller than 640px
+                            fixedWidth: "25rem", // Adjust fixed width for screens smaller than 640px
                         },
                     },
                 }}

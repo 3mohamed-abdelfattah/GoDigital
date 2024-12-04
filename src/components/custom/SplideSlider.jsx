@@ -1,12 +1,12 @@
-import { SplideSlide } from '@splidejs/react-splide';
-import '@/styles/slider.css'
+import { SplideSlide } from "@splidejs/react-splide";
+import "@/styles/slider.css"
 
 export const SplideSlider = ({ children, image }) => {
     return (
         <SplideSlide>
             <div
                 className="relative rounded-3xl sm:rounded-[32px] w-96 h-96 sm:w-[510px] sm:h-[500px] overflow-hidden shadow-lg m-3 mb-12 lg:mb-0"
-                style={{ boxShadow: '0px 4px 4px 0px #00000040' }}
+                style={{ boxShadow: "0px 4px 4px 0px #00000040" }}
             >
                 {/* image */}
                 <img

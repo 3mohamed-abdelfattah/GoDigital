@@ -20,7 +20,7 @@ export const HeroSection = () => {
             </section>
 
             {/* Second Hero Section [Plane Labels] */}
-            <section className="flex flex-wrap justify-center items-center gap-10 rounded-3xl md:rounded-[58px] text-center text-primaryColor pt-8 pb-8 md:pt-[78px] md:pb-16 mx-5 md:mx-20">
+            <section className="flex flex-wrap justify-center items-center gap-10 rounded-3xl md:rounded-[58px] text-center text-primaryColor pt-8 vsm:pb-8 md:pt-[78px] md:pb-16 mx-5 md:mx-20">
                 <PlaneLabel>Travel Insurance</PlaneLabel>
                 <PlaneLabel>Προσωπικών Ατυχημάτων Αλλοδαπών</PlaneLabel>
                 <PlaneLabel>Ευθύνης Ασφαλιστικών Διαμεσολαβητών</PlaneLabel>

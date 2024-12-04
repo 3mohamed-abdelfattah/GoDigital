@@ -1,7 +1,7 @@
 // Icons
 import * as Icons from '@/utils/icons.util'
 
-export const PlaneLabel = ({ children, rotateBox, rotateText, hight = 'h-[165.31px]' }) => {
+export const PlaneLabel = ({ children, rotateBox, rotateText, hight = 'h-[190px]' }) => {
     return (
         <main
             className={`${rotateBox} vsm:transform-none flex flex-col justify-evenly items-center w-[117.09px] md:w-[224.57px] ${hight} vsm:h-[184.31px] md:h-[315.12px] rounded-[154.84px] bg-secondaryColor`}

@@ -9,7 +9,7 @@ import ArticleImg3 from '@/assets/images/forHome/article3.jpeg'
 
 export const ArticlesSection = () => {
     return (
-        <main className="flex justify-center gap-10 pl-32 items-center my-48">
+        <main className="flex justify-center gap-10 pl-32 items-center my-48 overflow-hidden">
 
             <section className="flex flex-col w-[311px]">
                 {/* Titles */}

@@ -39,8 +39,8 @@ export const Header = () => {
 
             {/* Navigation Links */}
             <ul
-                className={`absolute top-24 right-5 bg-white shadow-lg rounded-lg flex flex-col gap-4 items-start p-5 font-semibold transition-all duration-500 ease-in-out
-                ${isMenuOpen ? "opacity-100 visible shadow-inner border md:border-none" : "opacity-0 invisible"}
+                className={`absolute top-24 right-5 bg-white shadow-lg rounded-lg flex flex-col gap-4 items-start p-5 font-semibold transition_all
+                ${isMenuOpen ? "opacity-100 pointer-events-auto visible shadow-inner border md:border-none" : "invisible pointer-events-none opacity-0 "}
                 md:static md:opacity-100 md:translate-x-0 md:flex md:flex-row md:gap-2 lg:gap-7 xl:gap-14 md:p-0 md:bg-transparent md:shadow-none`}
             >
                 {/* Array of navigation links */}

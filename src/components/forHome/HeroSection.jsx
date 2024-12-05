@@ -24,7 +24,7 @@ export const HeroSection = () => {
                 <PlaneLabel>Travel Insurance</PlaneLabel>
                 <PlaneLabel>Προσωπικών Ατυχημάτων Αλλοδαπών</PlaneLabel>
                 <PlaneLabel>Ευθύνης Ασφαλιστικών Διαμεσολαβητών</PlaneLabel>
-                <PlaneLabel>Ευθύνης Οδικού Μεταφορέα </PlaneLabel>
+                <PlaneLabel>Ευθύνης Οδικού Μεταφορέα</PlaneLabel>
                 <PlaneLabel rotateBox="rotate-90" hight="h-[241.8px]" rotateText="-rotate-90">Εγγυητικές Επιστολές</PlaneLabel>
             </section>
 

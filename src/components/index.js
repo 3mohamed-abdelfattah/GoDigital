@@ -7,6 +7,8 @@ export * from './forHome/HowWorksSection'
 export * from './forHome/WhyDigitalSection'
 export * from './forHome/ArticlesSection'
 export * from './forHome/ServicesSection'
+// BlogPage Components
+export * from './forBlog/HeroBlogSection'
 // Custom Components
 export * from './custom/PlaneLabel'
 export * from './custom/CircleDashed'

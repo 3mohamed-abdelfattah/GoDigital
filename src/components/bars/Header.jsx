@@ -40,14 +40,13 @@ export const Header = () => {
             {/* Navigation Links */}
             <ul
                 className={`absolute top-24 right-5 bg-white shadow-lg rounded-lg flex flex-col gap-4 items-start p-5 font-semibold transition-all duration-500 ease-in-out
-                ${isMenuOpen ? "opacity-100 shadow-inner border md:border-none" : "opacity-0"}
+                ${isMenuOpen ? "opacity-100 visible shadow-inner border md:border-none" : "opacity-0 invisible"}
                 md:static md:opacity-100 md:translate-x-0 md:flex md:flex-row md:gap-2 lg:gap-7 xl:gap-14 md:p-0 md:bg-transparent md:shadow-none`}
             >
                 {/* Array of navigation links */}
                 {Object.keys(routes).map((nav, index) => (
-                    <Link to={routes[nav]}>
+                    <Link to={routes[nav]} key={index}>
                         <li
-                            key={index}
                             onClick={() => setActive(nav)}
                             className={`${active === nav ? "bg-secondaryColor text-white" : "hover:bg-secondaryColor hover:text-white"
                                 } rounded-3xl px-4 py-2 cursor-pointer transition_all`}

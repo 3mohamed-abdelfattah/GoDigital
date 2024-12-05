@@ -5,7 +5,7 @@ export const ProductPage = () => {
     return (
         <main>
             <Header />
-            <h1>ProductPage</h1>
+            <h1 className="flex justify-center items-center text-9xl h-screen text-secondaryColor font-bold">ProductPage</h1>
         </main>
     )
 }

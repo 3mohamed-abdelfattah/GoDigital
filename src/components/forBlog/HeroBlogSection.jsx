@@ -28,11 +28,11 @@ export const HeroBlogSection = () => {
             </section>
 
             {/* Second Hero Section [Travel Insurance] */}
-            <section className={`flex flex-wrap justify-center items-center gap-10 rounded-3xl md:rounded-[58px] text-center text-primaryColor py-4 sm:py-8 mx-5 md:mx-20 transition_all ${toggle ? 'max-h-96' : 'max-h-32'}`}>
+            <section className={`flex flex-wrap justify-center items-center gap-10 rounded-3xl md:rounded-[58px] text-center text-primaryColor py-4 md:py-8 mx-5 md:mx-20 transition_all ${toggle ? 'max-h-96' : 'max-h-32'}`}>
                 {toggle ?
-                    <span className="flex flex-col justify-center items-center gap-4 sm:gap-7">
+                    <span className="flex flex-col justify-center items-center gap-4 md:gap-7">
                         <Icons.PlaneIcon />
-                        <h3 className="font-bold sm:text-3xl text-center">Travel Insurance</h3>
+                        <h3 className="font-bold md:text-3xl text-center">Travel Insurance</h3>
                         <span onClick={handleToggle} className="text-primaryColor hover:text-primaryBgColor rotate-180 cursor-pointer"><Icons.BottomArrowIcon /></span>
                     </span>
                     : <span onClick={handleToggle} className="text-primaryBgColor hover:text-primaryColor cursor-pointer"><Icons.BottomArrowIcon /></span>}

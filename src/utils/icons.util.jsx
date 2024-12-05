@@ -107,7 +107,7 @@ export const CloseIcon = () => (
 
 export const BottomArrowIcon = () => (
     <svg
-        className="w-5 h-5 sm:w-[33px] sm:h-[33px]"
+        className="w-5 h-5 md:w-[33px] md:h-[33px]"
         viewBox="0 0 33 18"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

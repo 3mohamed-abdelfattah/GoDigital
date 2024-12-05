@@ -29,3 +29,17 @@ html {
 .transition_all {
   transition: all 0.5s ease-out;
 }
+
+/* Edit Spilder Library Proparties */
+/* important for override library defult style */
+.slider_container {
+  margin: 20px 0 !important;
+}
+
+/* less 'margin' for screens smaller than 1024px */
+@media (max-width: 1024px) {
+  .slider_container {
+    margin: 5px 0 !important;
+    /* less the margin property */
+  }
+}

@@ -1,18 +1,27 @@
 /* Slider Dots Style */
 .splide__pagination {
   position: absolute;
-  bottom: -50px;
-  left: 30px;
+  bottom: -4.1% !important; /* important for override library defult style */
+  left: 15% !important;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   margin-top: 1rem;
 }
 
+/* Remove 'bottom' for screens smaller than 1024px */
+@media (max-width: 1024px) {
+  .splide__pagination {
+    bottom: 5px !important; /* edit the bottom property */
+    left: 20% !important; /* edit the left property */
+  }
+}
+
 .splide__pagination__page {
   width: 12px;
   height: 12px;
   background-color: white !important;
+  opacity: 1 !important;
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;

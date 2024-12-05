@@ -1,7 +1,5 @@
-// Splide Library
-import { Splide } from "@splidejs/react-splide";
-import { SplideSlider } from "@/components";
-import "@splidejs/react-splide/css";
+// Component
+import { ImageSlider } from "@/components"
 // Images
 import ArticleImg1 from "@/assets/images/forHome/article1.jpeg"
 import ArticleImg2 from "@/assets/images/forHome/article2.jpeg"
@@ -25,67 +23,33 @@ export const ArticlesSection = () => {
             </section>
 
             {/* Dark Gray Background*/}
-            <span className="absolute bg-primaryBgColor w-11/12 lg:w-3/5 right-0 h-[480px] sm:h-[600px] lg:h-[693px] rounded-s-[58px]"></span>
+            <span className="absolute bg-primaryBgColor w-11/12 lg:w-3/5 right-0 h-[480px] sm:h-[600px] lg:h-[693px] rounded-s-[58px] -z-30"></span>
 
-            {/* Splide Properties */}
-            <Splide
-                options={{
-                    type: "loop",
-                    rewind: true,
-                    drag: "free",
-                    rewindByDrag: true,
-                    snap: true,
-                    arrows: false,
-                    fixedWidth: "33rem",
-                    width: "82%",
-                    padding: { right: "60%" },
-                    pagination: true,
-                    breakpoints: {
-                        1024: {
-                            width: "100%", // Full width for screens smaller than 1024px
-                            padding: { right: "0%" },
-                        },
-                        640: {
-                            fixedWidth: "25rem", // Adjust fixed width for screens smaller than 640px
-                        },
-                    },
-                }}
-            >
+            {/* Dynamic Slider Component */}
+            <ImageSlider slides={slidesData} />
 
-                {/* Slide 1 */}
-                <SplideSlider SplideSlider image={ArticleImg1}>
-                    <h3 className="text-lg font-bold max-w-[446px] text-[28px]">Lorem ipsum dolor sit amet</h3>
-                    <p className="text-sm max-w-[446px] text-[22px] font-semibold leading-[26.63px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                    </p>
-                    <a href="#" className="text-secondaryColor underline">
-                        Read More
-                    </a>
-                </SplideSlider>
-
-                {/* Slide 2 */}
-                <SplideSlider image={ArticleImg2}>
-                    <h3 className="text-lg font-bold max-w-[446px] text-[28px]">Lorem ipsum dolor sit amet</h3>
-                    <p className="text-sm max-w-[446px] text-[22px] font-semibold leading-[26.63px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                    </p>
-                    <a href="#" className="text-secondaryColor underline">
-                        Read More
-                    </a>
-                </SplideSlider>
-
-                {/* Slide 3 */}
-                <SplideSlider image={ArticleImg3}>
-                    <h3 className="text-lg font-bold max-w-[446px] text-[28px]">Lorem ipsum dolor sit amet</h3>
-                    <p className="text-sm max-w-[446px] text-[22px] font-semibold leading-[26.63px]">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-                    </p>
-                    <a href="#" className="text-secondaryColor underline">
-                        Read More
-                    </a>
-                </SplideSlider>
-
-            </Splide>
         </main>
     )
 }
+
+// Data Will Come From API
+const slidesData = [
+    {
+        imgSrc: ArticleImg1,
+        title: "Lorem ipsum dolor sit amet",
+        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        readMoreUrl: "https://example.com/",
+    },
+    {
+        imgSrc: ArticleImg2,
+        title: "Lorem ipsum dolor sit amet",
+        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        readMoreUrl: "https://example.com/",
+    },
+    {
+        imgSrc: ArticleImg3,
+        title: "Lorem ipsum dolor sit amet",
+        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+        readMoreUrl: "https://example.com/",
+    },
+];

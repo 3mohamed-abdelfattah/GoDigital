@@ -3,8 +3,18 @@ import { useState } from "react"
 import * as Icons from "@/utils/icons.util"
 // Image
 import Logo from "@/assets/images/logo.png"
+import { Link } from "react-router-dom";
+// Define routes for each link
+const routes = {
+    "Αρχική": "/",
+    "Προϊόντα": "/products",
+    "Σχετικά με εμάς": "/about",
+    "Blog": "/blog",
+    "Επικοινωνία": "/contact",
+};
 
 export const Header = () => {
+    const [active, setActive] = useState('Αρχική') //Default State
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     // Toggle the mobile menu visibility
@@ -28,15 +38,19 @@ export const Header = () => {
                 {["Αρχική", "Προϊόντα", "Σχετικά με εμάς", "Blog", "Επικοινωνία"].map((nav, index) => (
                     <li
                         key={index}
-                        className="hover:bg-secondaryColor hover:text-white rounded-3xl px-4 py-2 cursor-pointer transition_all"
+                        onClick={() => setActive(nav)}
+                        className={`${active === nav ? "bg-secondaryColor text-white" : "hover:bg-secondaryColor hover:text-white"
+                            } rounded-3xl px-4 py-2 cursor-pointer transition_all`}
                     >
-                        {nav === "Προϊόντα" ? (
-                            <span className="flex items-center gap-1">
-                                {nav} <Icons.ToggleArrowIcon />
-                            </span>
-                        ) : (
-                            nav
-                        )}
+                        <Link to={routes[nav]}>
+                            {nav === "Προϊόντα" ? (
+                                <span className="flex items-center gap-1">
+                                    {nav} <Icons.ToggleArrowIcon />
+                                </span>
+                            ) : (
+                                nav
+                            )}
+                        </Link>
                     </li>
                 ))}
             </ul>

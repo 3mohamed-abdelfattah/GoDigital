@@ -1,3 +1,4 @@
+// Components
 import { Header, HeroSection, HowWorksSection, WhyDigitalSection, ArticlesSection, ServicesSection, GetQuote } from '@/components';
 
 export const HomePage = () => {

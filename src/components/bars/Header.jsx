@@ -1,9 +1,10 @@
-import { useState } from "react"
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 // Icons
-import * as Icons from "@/utils/icons.util"
+import * as Icons from "@/utils/icons.util";
 // Image
-import Logo from "@/assets/images/logo.png"
-import { Link } from "react-router-dom";
+import Logo from "@/assets/images/logo.png";
+
 // Define routes for each link
 const routes = {
     "Αρχική": "/",
@@ -14,8 +15,17 @@ const routes = {
 };
 
 export const Header = () => {
-    const [active, setActive] = useState('Αρχική') //Default State
+    const location = useLocation();
+    const [active, setActive] = useState("");
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    // Update `active` state based on current location
+    useEffect(() => {
+        const currentRoute = Object.keys(routes).find(
+            (key) => routes[key] === location.pathname
+        );
+        if (currentRoute) setActive(currentRoute);
+    }, [location]);
 
     // Toggle the mobile menu visibility
     const toggleMenu = () => {
@@ -24,7 +34,6 @@ export const Header = () => {
 
     return (
         <header className="flex justify-between md:justify-around items-center mt-3 mb-2 vsm:mt-9 vsm:mb-5 mx-8 md:mx-5">
-
             {/* Logo */}
             <img src={Logo} alt="Go Digital Logo" width={140} />
 
@@ -35,14 +44,14 @@ export const Header = () => {
                 md:static md:opacity-100 md:translate-x-0 md:flex md:flex-row md:gap-2 lg:gap-7 xl:gap-14 md:p-0 md:bg-transparent md:shadow-none`}
             >
                 {/* Array of navigation links */}
-                {["Αρχική", "Προϊόντα", "Σχετικά με εμάς", "Blog", "Επικοινωνία"].map((nav, index) => (
-                    <li
-                        key={index}
-                        onClick={() => setActive(nav)}
-                        className={`${active === nav ? "bg-secondaryColor text-white" : "hover:bg-secondaryColor hover:text-white"
-                            } rounded-3xl px-4 py-2 cursor-pointer transition_all`}
-                    >
-                        <Link to={routes[nav]}>
+                {Object.keys(routes).map((nav, index) => (
+                    <Link to={routes[nav]}>
+                        <li
+                            key={index}
+                            onClick={() => setActive(nav)}
+                            className={`${active === nav ? "bg-secondaryColor text-white" : "hover:bg-secondaryColor hover:text-white"
+                                } rounded-3xl px-4 py-2 cursor-pointer transition_all`}
+                        >
                             {nav === "Προϊόντα" ? (
                                 <span className="flex items-center gap-1">
                                     {nav} <Icons.ToggleArrowIcon />
@@ -50,8 +59,8 @@ export const Header = () => {
                             ) : (
                                 nav
                             )}
-                        </Link>
-                    </li>
+                        </li>
+                    </Link>
                 ))}
             </ul>
 

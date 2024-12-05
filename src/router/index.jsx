@@ -15,6 +15,10 @@ const router = createBrowserRouter([
         path: "/blog",
         element: <BlogPage />,
     },
+    {
+        path: "/*",
+        element: <h1 className="flex justify-center items-center text-9xl h-screen text-secondaryColor font-bold">Soon</h1>,
+    },
 ]);
 
 const Router = () => {

@@ -2,6 +2,7 @@ import { SplideSlide } from "@splidejs/react-splide";
 // Custom styles for pagination ( Dots )
 import "@/styles/slider.css"
 
+// For Each image in Slider and titles on image 
 export const SplideSlider = ({ children, image }) => {
     return (
         <SplideSlide>

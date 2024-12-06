@@ -4,7 +4,8 @@ import { Splide } from "@splidejs/react-splide";
 import { SplideSlider } from "@/components";
 import "@splidejs/react-splide/css";
 
-export const ImageSlider = ({ slides }) => {
+// For All Slides
+export const ImageSlider = ({ slides, direction = "ltr" }) => {
     return (
         <Splide className="slider_container"
             options={{
@@ -14,14 +15,13 @@ export const ImageSlider = ({ slides }) => {
                 rewindByDrag: true,
                 snap: true,
                 arrows: false,
+                direction: direction,
                 fixedWidth: "33rem",
                 width: "82%",
-                padding: { right: "60%", bottom: "80%" },
-                pagination: true, // Use Dots to navigate between slides
+                pagination: false, // Use Dots to navigate between slides
                 breakpoints: {
                     1024: {
                         width: "100%", // Full width for screens smaller than 1024px
-                        padding: { right: "0%" },
                     },
                     640: {
                         fixedWidth: "25rem", // Adjust fixed width for screens smaller than 640px

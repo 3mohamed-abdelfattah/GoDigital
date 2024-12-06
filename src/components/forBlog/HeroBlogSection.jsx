@@ -27,7 +27,7 @@ export const HeroBlogSection = () => {
                 <h2 className="mt-5 mb-6 mx-5 max-w-[519px] text-xs vsm:text-base md:text-[22px] vsm:leading-[30.05px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
             </section>
 
-            {/* Second Hero Section [Travel Insurance] */}
+            {/* Toggle Bar [Travel Insurance] */}
             <section className={`flex flex-wrap justify-center items-center gap-10 rounded-3xl md:rounded-[58px] text-center text-primaryColor py-4 md:py-8 mx-5 md:mx-20 transition_all ${toggle ? 'max-h-96' : 'max-h-32'}`}>
                 {toggle ?
                     <span className="flex flex-col justify-center items-center gap-4 md:gap-7">

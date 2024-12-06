@@ -1,5 +1,5 @@
 // Components
-import { Header, HeroSection, HowWorksSection, WhyDigitalSection, ArticlesSection, ServicesSection, GetQuote } from '@/components';
+import { Header, HeroSection, HowWorksSection, WhyDigitalSection, ArticleSlider, ServicesSection, GetQuote } from '@/components';
 
 export const HomePage = () => {
     return (
@@ -8,7 +8,7 @@ export const HomePage = () => {
             <HeroSection />
             <HowWorksSection />
             <WhyDigitalSection />
-            <ArticlesSection />
+            <ArticleSlider />
             <ServicesSection />
             <GetQuote />
         </main>

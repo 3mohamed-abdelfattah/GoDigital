@@ -45,11 +45,11 @@ export const Header = () => {
             >
                 {/* Array of navigation links */}
                 {Object.keys(routes).map((nav, index) => (
-                    <Link to={routes[nav]} key={index}>
+                    <Link to={routes[nav]} key={index} className="w-full md:w-auto">
                         <li
                             onClick={() => setActive(nav)}
                             className={`${active === nav ? "bg-secondaryColor text-white" : "hover:bg-secondaryColor hover:text-white"
-                                } rounded-3xl px-4 py-2 cursor-pointer transition_all`}
+                                } rounded md:rounded-3xl px-4 py-2 cursor-pointer transition_all`}
                         >
                             {nav === "Προϊόντα" ? (
                                 <span className="flex items-center gap-1">

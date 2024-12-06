@@ -17,7 +17,7 @@ export const HeroBlogSection = () => {
 
             {/* First Hero Section [Logo & Titles] */}
             <section
-                className="flex flex-col justify-center items-center bg-primaryBgColor text-center rounded-3xl md:rounded-[58px] text-primaryColor py-6 md:py-12 md:h-[590px]"
+                className="flex flex-col justify-center items-center bg-primaryBgColor text-center rounded-3xl md:rounded-[58px] text-primaryColor py-6 md:py-12 md:max-h-[590px]"
                 style={{ boxShadow: "0 10px 10px rgba(0, 0, 0, 0.2)" }}
             >
                 {/* Hero Section Logo */}

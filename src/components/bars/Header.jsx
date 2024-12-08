@@ -79,7 +79,7 @@ export const Header = () => {
                 {Object.keys(routes).map((nav, index) => (
                     <li
                         key={index}
-                        className={`${active === nav ? "bg-secondaryColor text-white" : "hover:bg-primaryBgColor hover:text-white"} w-full md:w-auto rounded md:rounded-3xl px-4 py-2 cursor-pointer transition_all relative md:active:scale-105`}
+                        className={`${active === nav ? "bg-secondaryColor text-white" : "hover:bg-primaryBgColor hover:text-white"} w-full md:w-auto rounded md:rounded-3xl px-4 py-2 cursor-pointer transition_all relative md:active:scale-110`}
                         onClick={() => nav === "Προϊόντα" && toggleSubmenu()} // Toggle submenu for "Προϊόντα"
                     >
                         {nav === "Προϊόντα" ? (
@@ -112,13 +112,13 @@ export const Header = () => {
 
             <section className="flex items-center gap-5">
                 {/* User Profile Icon */}
-                <span className="flex justify-center items-center bg-secondaryColor hover:bg-primaryBgColor rounded-full w-10 h-10 cursor-pointer transition_all">
+                <span className="flex justify-center items-center bg-secondaryColor hover:bg-primaryBgColor rounded-full w-10 h-10 cursor-pointer transition_all active:scale-125">
                     <Icons.UserIcon />
                 </span>
 
                 {/* Hamburger Icon for Mobile */}
                 <span
-                    className="md:hidden flex items-center cursor-pointer"
+                    className="md:hidden flex items-center cursor-pointer active:scale-110"
                     onClick={toggleMenu}
                 >
                     {isMenuOpen ? <Icons.CloseIcon /> : <Icons.MenuIcon />}

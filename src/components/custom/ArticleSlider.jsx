@@ -22,7 +22,7 @@ export const ArticleSlider = ({
                 <h2 className="sm:text-[22px] sm:leading-[26.63px] my-3 sm:my-8 lg:w-[311px]">{subTitle}</h2>
                 {/* More Button */}
                 <button
-                    className={`${buttonStyle} w-32 sm:w-[213px] h-12 sm:h-[65px] rounded-[10px] sm:text-lg text-primaryColor font-bold transition_all`}
+                    className={`${buttonStyle} w-32 sm:w-[213px] h-12 sm:h-[65px] rounded-[10px] sm:text-lg text-primaryColor font-bold transition_all active:scale-110`}
                     style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
                 >
                     Περισσότερα

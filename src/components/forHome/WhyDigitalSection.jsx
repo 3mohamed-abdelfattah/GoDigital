@@ -18,7 +18,7 @@ export const WhyDigitalSection = () => {
 
             {/* Quote Button */}
             <button
-                className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 sm:mt-16 hover:bg-primaryColor hover:text-secondaryColor transition_all"
+                className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 sm:mt-16 hover:bg-primaryColor hover:text-secondaryColor transition_all active:scale-110"
                 style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
             >
                 Get Quote

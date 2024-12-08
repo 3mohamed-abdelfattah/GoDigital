@@ -1,5 +1,10 @@
+import { Header } from "../../components/bars/Header"
+
 export const GuaranteesPage = () => {
     return (
-        <div>GuaranteesPage</div>
+        <main>
+            <Header />
+            <div>GuaranteesPage</div>
+        </main>
     )
 }

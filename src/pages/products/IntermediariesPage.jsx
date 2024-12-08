@@ -1,5 +1,10 @@
+import { Header } from "../../components/bars/Header"
+
 export const IntermediariesPage = () => {
     return (
-        <div>IntermediariesPage</div>
+        <main>
+            <Header />
+            <div>IntermediariesPage</div>
+        </main>
     )
 }

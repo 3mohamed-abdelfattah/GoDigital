@@ -25,16 +25,33 @@ const productSubmenu = [
 
 export const Header = () => {
     const location = useLocation();
-    const [active, setActive] = useState("");
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false); // State for menu visibility
     const [isSubmenuOpen, setIsSubmenuOpen] = useState(false); // State for submenu visibility
+    const [active, setActive] = useState(""); // State for active menu item
+    const [activeSubmenu, setActiveSubmenu] = useState(""); // State for active submenu item
 
     // Update `active` state based on current location
     useEffect(() => {
+        // Check if current path matches any of the main routes
         const currentRoute = Object.keys(routes).find(
             (key) => routes[key] === location.pathname
         );
-        if (currentRoute) setActive(currentRoute);
+
+        // Check if current path matches any product submenu item
+        const activeSubItem = productSubmenu.find(
+            (item) => item.path === location.pathname
+        );
+
+        if (activeSubItem) {
+            setActive("Προϊόντα"); // Highlight main menu
+            setActiveSubmenu(activeSubItem.name); // Highlight the submenu item
+        } else if (currentRoute) {
+            setActive(currentRoute);
+            setActiveSubmenu(""); // Clear submenu highlight
+        } else {
+            setActive("");
+            setActiveSubmenu(""); // Clear all highlights
+        }
     }, [location]);
 
     // Toggle the mobile menu visibility
@@ -62,8 +79,7 @@ export const Header = () => {
                 {Object.keys(routes).map((nav, index) => (
                     <li
                         key={index}
-                        className={`${active === nav ? "bg-secondaryColor text-white" : "hover:bg-primaryBgColor hover:text-white"
-                            } w-full md:w-auto rounded md:rounded-3xl px-4 py-2 cursor-pointer transition_all relative`}
+                        className={`${active === nav ? "bg-secondaryColor text-white" : "hover:bg-primaryBgColor hover:text-white"} w-full md:w-auto rounded md:rounded-3xl px-4 py-2 cursor-pointer transition_all relative md:active:scale-105`}
                         onClick={() => nav === "Προϊόντα" && toggleSubmenu()} // Toggle submenu for "Προϊόντα"
                     >
                         {nav === "Προϊόντα" ? (
@@ -78,7 +94,11 @@ export const Header = () => {
                         {nav === "Προϊόντα" && isSubmenuOpen && (
                             <ul className="absolute top-full -left-52 bg-white z-50 text-black rounded-3xl shadow-xl mt-2 text-xs w-96 flex flex-col gap-1 overflow-hidden">
                                 {productSubmenu.map((item, subIndex) => (
-                                    <Link to={item.path} key={subIndex} className="hover:bg-secondaryColor hover:text-white">
+                                    <Link
+                                        to={item.path}
+                                        key={subIndex}
+                                        className={`${activeSubmenu === item.name ? "bg-secondaryColor text-white" : ""} hover:bg-secondaryColor hover:text-white`}
+                                    >
                                         <li className="p-2 mx-3 border-b border-secondaryColor/20 transition_all">
                                             {item.name}
                                         </li>

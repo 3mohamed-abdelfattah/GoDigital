@@ -1,5 +1,10 @@
+import { Header } from "../../components/bars/Header"
+
 export const TravelPage = () => {
     return (
-        <div>TravelPage</div>
+        <main>
+            <Header />
+            <div>TravelPage</div>
+        </main>
     )
 }

@@ -1,14 +1,14 @@
 // Primary Bars 
 export * from './bars/Header'
-export * from './bars/GetQuote'
+export * from './bars/GetQuote' // Get Quote bar for Mobile
 // HomePage Components
-export * from './forHome/HeroSection'
+export * from './forHome/HeroSection' // Hero Section in Home Page
 export * from './forHome/HowWorksSection'
 export * from './forHome/WhyDigitalSection'
 export * from './forHome/ServicesSection'
 // BlogPage Components
-export * from './forBlog/HeroBlogSection'
-export * from './forBlog/SlidesSection'
+export * from './forBlog/HeroBlogSection' // Hero Section in Blog Page
+export * from './forBlog/SlidesSection'  // All Slides in Blog Page
 // Custom Components
 export * from './custom/PlaneLabel' // Oval shape with airplane logo inside and text
 export * from './custom/CircleDashed' // A circle with a logo inside and lines between it

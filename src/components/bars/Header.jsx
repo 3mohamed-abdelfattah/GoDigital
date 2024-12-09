@@ -18,9 +18,9 @@ const routes = {
 const productSubmenu = [
     { name: "Ταξιδιωτική", path: "/products/travel" },
     { name: "Εγγυήσεων", path: "/products/guarantees" },
-    { name: "Επαγγελματικής Ευθύνης Οδικού Μεταφορέα!", path: "/products/road-carrier-professional-liability" },
-    { name: "Ιατροφαρμακευτική Ασφάλιση Αλλοδαπών", path: "/products/medical-insurance-foreigners" },
-    { name: "Επαγγελματικής Ευθύνης Ασφαλιστικών Διαμεσολαβητών", path: "/products/professional-liability-insurance-intermediaries" },
+    { name: "Ευθύνης Οδικού Μεταφορέα", path: "/products/road-carrier-professional-liability" },
+    { name: "Προσωπικών Ατυχημάτων Αλλοδαπών", path: "/products/medical-insurance-foreigners" },
+    { name: "Ευθύνης Ασφαλιστικών Διαμεσολαβητών", path: "/products/professional-liability-insurance-intermediaries" },
 ];
 
 export const Header = () => {
@@ -92,7 +92,7 @@ export const Header = () => {
 
                         {/* Submenu for "Προϊόντα" */}
                         {nav === "Προϊόντα" && isSubmenuOpen && (
-                            <ul className="absolute top-full -left-52 bg-white z-50 text-black rounded-3xl shadow-xl mt-2 text-xs w-96 flex flex-col gap-1 overflow-hidden">
+                            <ul className="absolute top-full -right-1 md:-left-10 bg-white z-50 text-black rounded-3xl shadow-xl mt-2 text-sm w-80 flex flex-col gap-1 overflow-hidden">
                                 {productSubmenu.map((item, subIndex) => (
                                     <Link
                                         to={item.path}

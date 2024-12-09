@@ -1,5 +1,5 @@
 // Components
-import { Header, HeroProductsSection, CircleDashed, CircleGray } from "@/components"
+import { Header, HeroProductsSection, CircleDashed, CircleGray, ArticleSlider } from "@/components"
 // Icons
 import * as Icons from "@/utils/icons.util"
 
@@ -82,6 +82,8 @@ export const GuaranteesPage = () => {
                 </button>
             </section>
 
+            {/* Article Slide Section */}
+            <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τις εγγυητικές επιστολές." />
         </main>
     )
 }

@@ -1,5 +1,5 @@
 // Components
-import { Header, HeroProductsSection, CircleDashed, CircleGray } from "@/components"
+import { Header, HeroProductsSection, CircleDashed, CircleGray, ArticleSlider } from "@/components"
 // Icons
 import * as Icons from "@/utils/icons.util"
 
@@ -94,6 +94,8 @@ export const TravelPage = () => {
             </section>
 
 
+            {/* Article Slide Section */}
+            <ArticleSlider subTitle="Μάθε περισσότερα για την ταξιδιωτική ασφάλιση και τα ταξίδια" />
         </main>
     )
 }

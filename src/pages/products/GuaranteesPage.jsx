@@ -1,5 +1,5 @@
 // Components
-import { Header, HeroProductsSection } from "@/components"
+import { Header, HeroProductsSection, CircleDashed } from "@/components"
 // Icons
 import * as Icons from "@/utils/icons.util"
 
@@ -28,6 +28,28 @@ export const GuaranteesPage = () => {
                     </span>
                 </div>
             </HeroProductsSection>
+
+            {/* Circles Section */}
+            <section className="mb-0 sm:mb-24">
+                <h1 className="text-center text-2xl lg:text-[40px] font-bold my-10 sm:my-12">Πώς δουλεύει</h1>
+                <article className="flex flex-col sm:flex-row items-start vsm:items-stretch max-w-[1202px] mx-20 vsm:mx-10 xl:m-auto">
+                    <CircleDashed title="Δώσε τις αναγκαίες πληροφορίες">
+                        <Icons.BoostIcon />
+                    </CircleDashed>
+                    {/* Dashed Line */}
+                    <span className="w-0 h-10 mx-14 vsm:m-auto sm:w-full sm:h-0 border-[2px] border-secondaryColor border-dashed"></span>
+
+                    <CircleDashed title="Συμπλήρωσε τα στοιχεία σου">
+                        <Icons.QuestionIcon />
+                    </CircleDashed>
+                    {/* Dashed Line */}
+                    <span className="w-0 h-10 mx-14 vsm:m-auto sm:w-full sm:h-0 border-[2px] border-secondaryColor border-dashed"></span>
+
+                    <CircleDashed title="Πάρε την προσφορά στο email σου σε λίγες ημέρες">
+                        <Icons.SendIcon />
+                    </CircleDashed>
+                </article>
+            </section>
 
         </main>
     )

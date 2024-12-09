@@ -1,6 +1,7 @@
 // Primary Bars 
 export * from './bars/Header'
 export * from './bars/GetQuote' // Get Quote bar for Mobile
+export * from './bars/GetQuoteSideBT' // Get Quote button for large Screen in products 
 // HomePage Components
 export * from './forHome/HeroSection' // Hero Section in Home Page
 export * from './forHome/HowWorksSection'

@@ -1,5 +1,5 @@
 // Components
-import { Header, HeroProductsSection, CircleDashed, CircleGray, ArticleSlider, SuccessRectangle, WarrantiesSection, GetQuote } from "@/components"
+import { Header, HeroProductsSection, CircleDashed, CircleGray, ArticleSlider, SuccessRectangle, WarrantiesSection, GetQuote, GetQuoteSideBT } from "@/components"
 // Icons
 import * as Icons from "@/utils/icons.util"
 
@@ -107,6 +107,7 @@ export const GuaranteesPage = () => {
             {/* Article Slide Section */}
             <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τις εγγυητικές επιστολές." />
             <GetQuote />
+            <GetQuoteSideBT />
         </main>
     )
 }

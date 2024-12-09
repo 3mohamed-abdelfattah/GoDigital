@@ -1,5 +1,5 @@
 // Components
-import { Header, HeroProductsSection, CircleDashed, CircleGray, ArticleSlider, SuccessRectangle } from "@/components"
+import { Header, HeroProductsSection, CircleDashed, CircleGray, ArticleSlider, SuccessRectangle, GetQuote } from "@/components"
 // Icons
 import * as Icons from "@/utils/icons.util"
 
@@ -94,6 +94,7 @@ export const LiabilityPage = () => {
 
             {/* Article Slide Section */}
             <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τις μεταφορές." />
+            <GetQuote />
         </main>
     )
 }

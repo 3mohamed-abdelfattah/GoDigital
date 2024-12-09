@@ -3,7 +3,7 @@ import { Header, HeroSection, HowWorksSection, WhyDigitalSection, ArticleSlider,
 
 export const HomePage = () => {
     return (
-        <main>
+        <>
             <Header />
             <HeroSection />
             <HowWorksSection />
@@ -11,6 +11,6 @@ export const HomePage = () => {
             <ArticleSlider url="/blog" />
             <ServicesSection />
             <GetQuote />
-        </main>
+        </>
     );
 };

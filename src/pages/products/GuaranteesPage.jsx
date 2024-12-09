@@ -1,5 +1,5 @@
 // Components
-import { Header, HeroProductsSection, CircleDashed, CircleGray, ArticleSlider, SuccessRectangle } from "@/components"
+import { Header, HeroProductsSection, CircleDashed, CircleGray, ArticleSlider, SuccessRectangle, WarrantiesSection, GetQuote } from "@/components"
 // Icons
 import * as Icons from "@/utils/icons.util"
 
@@ -50,6 +50,9 @@ export const GuaranteesPage = () => {
                     </CircleDashed>
                 </article>
             </section>
+
+            {/* Warranties Section */}
+            <WarrantiesSection />
 
             {/* Services Section */}
             <section className="max-w-[1754px] bg-secondaryBgColor rounded-3xl lg:rounded-[58px] text-center mt-10 md:mt-[139px] mx-7 lg:mx-20 p-5 vsm:p-8 lg:p-12">
@@ -103,6 +106,7 @@ export const GuaranteesPage = () => {
 
             {/* Article Slide Section */}
             <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τις εγγυητικές επιστολές." />
+            <GetQuote />
         </main>
     )
 }

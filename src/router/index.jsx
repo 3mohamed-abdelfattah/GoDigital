@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Pages
-import { HomePage, ForeignersPage, GuaranteesPage, IntermediariesPage, LiabilityPage, TravelPage, BlogPage } from "@/pages";
+import { HomePage, ForeignersPage, GuaranteesPage, IntermediariesPage, LiabilityPage, TravelPage, BlogPage, BlogDetails } from "@/pages";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +30,10 @@ const router = createBrowserRouter([
     {
         path: "/blog",
         element: <BlogPage />,
+    },
+    {
+        path: "/blog/:id",
+        element: <BlogDetails />,
     },
     {
         path: "/*",

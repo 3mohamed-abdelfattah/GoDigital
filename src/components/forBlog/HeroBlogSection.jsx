@@ -1,4 +1,3 @@
-import { useState } from "react"
 // Images
 import Symbol from "@/assets/images/icon.png"
 // Icons
@@ -21,7 +20,7 @@ export const HeroBlogSection = () => {
             </section>
 
             {/* Arrow */}
-            <section className={`flex justify-center items-center gap-10 rounded-3xl md:rounded-[58px] py-4 md:py-8 mx-5 md:mx-20`}>
+            <section className="flex justify-center items-center gap-10 rounded-3xl md:rounded-[58px] py-4 md:py-8 mx-5 md:mx-20">
                 <span className="text-primaryBgColor"><Icons.BottomArrowIcon /></span>
             </section>
 

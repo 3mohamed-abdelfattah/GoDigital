@@ -1,10 +1,10 @@
+import { Link } from "react-router-dom"
 // Components
 import { ImageSlider } from "@/components"
 // Images
 import ArticleImg1 from "@/assets/images/forHome/article1.jpeg"
 import ArticleImg2 from "@/assets/images/forHome/article2.jpeg"
 import ArticleImg3 from "@/assets/images/forHome/article3.jpeg"
-import { Link } from "react-router-dom"
 
 export const ArticleSlider = ({
     title = 'Άρθρα',

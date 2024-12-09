@@ -1,5 +1,7 @@
 export * from './home/HomePage'
+// Blog Pages
 export * from './blog/BlogPage'
+export * from './blog/BlogDetails'
 // All Products Pages
 export * from './products/TravelPage'
 export * from './products/GuaranteesPage'

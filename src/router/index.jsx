@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Pages
 import { HomePage, ForeignersPage, GuaranteesPage, IntermediariesPage, LiabilityPage, TravelPage, BlogPage, BlogDetails } from "@/pages";
+import { Header } from "../components/bars/Header";
 
 const router = createBrowserRouter([
     {
@@ -37,7 +38,10 @@ const router = createBrowserRouter([
     },
     {
         path: "/*",
-        element: <h1 className="flex justify-center items-center text-9xl h-screen text-secondaryColor font-bold">Soon</h1>,
+        element: <div>
+            <Header />
+            <h1 className="flex justify-center items-center text-3xl mt-52 text-secondaryColor font-bold">Soon...</h1>
+        </div>,
     },
 ]);
 

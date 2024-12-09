@@ -8,7 +8,7 @@ export const HomePage = () => {
             <HeroSection />
             <HowWorksSection />
             <WhyDigitalSection />
-            <ArticleSlider />
+            <ArticleSlider url="/blog" />
             <ServicesSection />
             <GetQuote />
         </main>

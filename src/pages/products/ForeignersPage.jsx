@@ -1,5 +1,5 @@
 // Components
-import { Header, HeroProductsSection, CircleDashed, CircleGray, ArticleSlider } from "@/components"
+import { Header, HeroProductsSection, CircleDashed, CircleGray, ArticleSlider, SuccessRectangle } from "@/components"
 // Icons
 import * as Icons from "@/utils/icons.util"
 
@@ -71,6 +71,25 @@ export const ForeignersPage = () => {
                 >
                     Get Quote
                 </button>
+            </section>
+
+            {/* Why GoDigital Section*/}
+            <section className="bg-secondaryColor mx-7 lg:mx-20 rounded-b-3xl md:rounded-b-[58px] rounded-t-[30px] md:rounded-t-[70px] my-5 md:my-20">
+                {/* Head Titles */}
+                <article
+                    className="flex flex-col justify-center items-center bg-secondaryBgColor text-center rounded-3xl md:rounded-[58px] py-12 h-[200px]"
+                    style={{ boxShadow: "0px 10px 10px 0px #8E240026" }}
+                >
+                    <h1 className="max-w-[683px] text-3xl sm:text-[40px] font-bold leading-[54.64px]">Γιατί GoDigital;</h1>
+                    <h2 className="mt-5 mb-6 mx-2 sm:text-[22px] sm:leading-[30.05px]">Στην Go Digital απλοποιούμε την ασφάλιση ψηφιακά και φέρνουμε στην οθόνη σας την καλύτερη πρόταση Ιατροφαρμακευτικής Ασφάλισης Αλλοδαπών.</h2>
+                </article>
+
+                {/* Services Rectangles */}
+                <article className="flex flex-wrap gap-3 vsm:gap-5 justify-center xl:justify-evenly items-center rounded-3xl md:rounded-b-[58px] text-center py-10 sm:py-16 mx-1 vsm:mx-4 xl:mx-20" >
+                    <SuccessRectangle>Εύκολη Διαδικασία Αγοράς</SuccessRectangle>
+                    <SuccessRectangle>Πλούσιες Καλύψεις</SuccessRectangle>
+                    <SuccessRectangle>Άμεση Έκδοση Συμβολαίου</SuccessRectangle>
+                </article>
             </section>
 
             {/* Article Slide Section */}

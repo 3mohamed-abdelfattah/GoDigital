@@ -20,6 +20,7 @@ export const HeroProductsSection = ({ headTitle, Subtitle, children }) => {
                     {children}
                     {/* Quote Button */}
                     <button
+                        data-aos="fade-right"
                         className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-sm vsm:text-base sm:text-lg font-bold hover:bg-primaryColor hover:text-secondaryColor transition_all active:scale-110"
                         style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
                     >
@@ -29,7 +30,7 @@ export const HeroProductsSection = ({ headTitle, Subtitle, children }) => {
             </section>
 
             {/* AirPlane Icon */}
-            <span className="p-5">
+            <span data-aos="fade-left" className="p-5">
                 <Icons.AirPlaneIcon />
             </span>
 

@@ -17,16 +17,16 @@ export const ArticleSlider = ({
 }) => {
     return (
         <section className={`${directionStyle} flex flex-col justify-end lg:justify-center gap-10 items-center my-8 sm:my-16 lg:my-48 overflow-hidden`}>
-
             <aside className="flex flex-col w-3/4 lg:w-[311px] mb-12 lg:mb-0">
                 {/* Titles */}
-                <h1 className="font-bold text-3xl sm:text-[40px]">{title}</h1>
-                <h2 className="sm:text-[22px] sm:leading-[26.63px] my-3 sm:my-8 lg:w-[311px]">{subTitle}</h2>
+                <h1 data-aos="zoom-in" className="font-bold text-3xl sm:text-[40px]">{title}</h1>
+                <h2 data-aos="zoom-in" className="sm:text-[22px] sm:leading-[26.63px] my-3 sm:my-8 lg:w-[311px]">{subTitle}</h2>
                 {/* More Button */}
                 <Link to={url}>
                     <button
                         className={`${buttonStyle} w-32 sm:w-[213px] h-12 sm:h-[65px] rounded-[10px] sm:text-lg text-primaryColor font-bold transition_all active:scale-110`}
                         style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
+                        data-aos="zoom-in"
                     >
                         Περισσότερα
                     </button>
@@ -38,7 +38,6 @@ export const ArticleSlider = ({
 
             {/* Dynamic Slider Component */}
             <ImageSlider slides={slidesData} direction={direction} />
-
         </section>
     )
 }

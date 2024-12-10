@@ -19,7 +19,7 @@ export const ProfileContracts = () => {
                 style={{ boxShadow: "0 10px 10px rgba(0, 0, 0, 0.2)" }}
             >
                 {/* Hero Section Logo */}
-                <img src={Symbol} alt="Go Digital Icon" className="w-[100px] md:w-[199px]" />
+                <img data-aos="fade-in" src={Symbol} alt="Go Digital Icon" className="w-[100px] md:w-[199px]" />
                 {/* User Name */}
                 <h1 className="max-w-[806px] mx-5 tiny:text-2xl vsm:text-4xl md:text-5xl font-semibold vsm:leading-[51.96px] md:leading-[81.96px]">Mohamed Mohamed</h1>
             </section>

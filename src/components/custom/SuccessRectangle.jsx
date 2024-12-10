@@ -8,7 +8,7 @@ export const SuccessRectangle = ({ children = "Add your text" }) => {
             style={{ boxShadow: " 0px 2px 4px 0px #00000026 inset" }}
         >
             <div><Icons.SuccessIcon /></div>
-            <h3 className="text-sm vsm:text-base sm:text-lg font-semibold sm:leading-[24.59px] text-center">{children}</h3>
+            <h3 data-aos="zoom-in" className="text-sm vsm:text-base sm:text-lg font-semibold sm:leading-[24.59px] text-center">{children}</h3>
         </main>
     )
 }

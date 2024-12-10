@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Pages
-import { HomePage, ForeignersPage, GuaranteesPage, IntermediariesPage, LiabilityPage, TravelPage, BlogPage, BlogDetails } from "@/pages";
+import { HomePage, ForeignersPage, GuaranteesPage, IntermediariesPage, LiabilityPage, TravelPage, BlogPage, BlogDetails, Profile } from "@/pages";
 import { Header } from "../components/bars/Header";
 
 const router = createBrowserRouter([
@@ -35,6 +35,10 @@ const router = createBrowserRouter([
     {
         path: "/blog/:id",
         element: <BlogDetails />,
+    },
+    {
+        path: "/profile",
+        element: <Profile />,
     },
     {
         path: "/*",

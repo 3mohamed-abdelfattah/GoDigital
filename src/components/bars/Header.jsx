@@ -112,9 +112,9 @@ export const Header = () => {
 
             <section className="flex items-center gap-5">
                 {/* User Profile Icon */}
-                <span className="flex justify-center items-center bg-secondaryColor hover:bg-primaryBgColor rounded-full w-10 h-10 cursor-pointer transition_all active:scale-125">
+                <Link to="/profile" className="flex justify-center items-center bg-secondaryColor hover:bg-primaryBgColor rounded-full w-10 h-10 cursor-pointer transition_all active:scale-125">
                     <Icons.UserIcon />
-                </span>
+                </Link>
 
                 {/* Hamburger Icon for Mobile */}
                 <span

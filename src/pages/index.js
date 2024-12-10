@@ -8,3 +8,5 @@ export * from './products/GuaranteesPage'
 export * from './products/LiabilityPage'
 export * from './products/ForeignersPage'
 export * from './products/IntermediariesPage'
+// Profiles Pages
+export * from './profile/Profile'

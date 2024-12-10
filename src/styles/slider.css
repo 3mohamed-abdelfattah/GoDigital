@@ -1,22 +1,16 @@
-/* Slider Dots Style */
-
-/* 
-.splide__pagination {
-  position: absolute;
-  bottom: -4.1% !important; 
-  left: 15% !important;
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
+/* Edit Spilder Library Proparties */
+/* important for override library defult style */
+.slider_container {
+  margin: 20px 0 !important;
 }
 
+/* less 'margin' for screens smaller than 1024px */
 @media (max-width: 1024px) {
-  .splide__pagination {
-    bottom: 5px !important; 
-    left: 20% !important;
+  .slider_container {
+    margin: 5px 0 !important;
+    /* less the margin property */
   }
-} */
+}
 
 .splide__pagination__page {
   width: 12px;

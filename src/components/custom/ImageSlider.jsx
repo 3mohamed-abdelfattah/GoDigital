@@ -32,11 +32,11 @@ export const ImageSlider = ({ slides, direction = "ltr" }) => {
             {/* Dynamic Slider based in data come from api */}
             {slides.map((slide, index) => (
                 <SplideSlider image={slide.imgSrc} key={index}>
-                    <h3 className="text-lg font-bold max-w-[446px] text-[28px]">{slide.title}</h3>
-                    <p className="text-sm max-w-[446px] text-[22px] font-semibold leading-[26.63px]">
+                    <h3 data-aos="fade-right" className="text-lg font-bold max-w-[446px] text-[28px]">{slide.title}</h3>
+                    <p data-aos="fade-right" className="text-sm max-w-[446px] text-[22px] font-semibold leading-[26.63px]">
                         {slide.subTitle}
                     </p>
-                    <Link to={slide.readMoreUrl} className="text-secondaryColor underline">
+                    <Link data-aos="fade-right" to={slide.readMoreUrl} className="text-secondaryColor underline">
                         Read More
                     </Link>
                 </SplideSlider>

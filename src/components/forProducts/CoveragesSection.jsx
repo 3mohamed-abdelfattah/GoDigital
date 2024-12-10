@@ -18,10 +18,10 @@ export const CoveragesSection = ({ title, description, data }) => {
 
     return (
         <main className="flex flex-col justify-center items-center pt-16 w-full">
-            <h1 className="text-3xl md:text-4xl font-extrabold text-primaryBgColor text-center">
+            <h1 data-aos="zoom-in" className="text-3xl md:text-4xl font-extrabold text-primaryBgColor text-center">
                 {title}
             </h1>
-            <h2 className="sm:text-lg lg:text-[22px] font-medium text-primaryBgColor px-10 max-w-[911px] text-center my-6">
+            <h2 data-aos="zoom-in" className="sm:text-lg lg:text-[22px] font-medium text-primaryBgColor px-10 max-w-[911px] text-center my-6">
                 {description}
             </h2>
 
@@ -52,13 +52,13 @@ export const CoveragesSection = ({ title, description, data }) => {
                                 onClick={() => handleToggle(index)}
                                 className="relative flex justify-center w-80 h-72 vsm:w-[350px] mt-5 vsm:h-[340px] sm:w-[381px] sm:h-[373px] bg-primaryBgColor rounded-[20px] overflow-hidden cursor-pointer mx-2"
                             >
-                                <span className="mt-16">
+                                <span className="mt-16" data-aos="zoom-in">
                                     <Icons.MedicalIcon />
                                 </span>
                                 <span className="absolute bottom-0 right-0 w-full bg-secondaryBgColor py-8 vsm:py-10 rounded-[20px] text-center overflow-hidden">
-                                    <h3 className="sm:text-[22px] font-bold">{slide.title}</h3>
+                                    <h3 data-aos="zoom-in" className="sm:text-[22px] font-bold">{slide.title}</h3>
                                     {toggles[index] && (
-                                        <h4 className="text-sm sm:text-lg px-1">
+                                        <h4 data-aos="zoom-in" className="text-sm sm:text-lg px-1">
                                             {slide.description}
                                         </h4>
                                     )}

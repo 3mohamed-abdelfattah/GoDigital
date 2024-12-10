@@ -13,7 +13,7 @@ export const HeroBlogSection = () => {
                 style={{ boxShadow: "0 10px 10px rgba(0, 0, 0, 0.2)" }}
             >
                 {/* Hero Section Logo */}
-                <img src={Symbol} alt="Go Digital Icon" className="w-[100px] md:w-[199px]" />
+                <img data-aos="fade-in" src={Symbol} alt="Go Digital Icon" className="w-[100px] md:w-[199px]" />
                 {/* Hero Section Titles */}
                 <h1 className="max-w-[806px] mx-5 tiny:text-2xl vsm:text-4xl md:text-6xl font-semibold vsm:leading-[51.96px] md:leading-[81.96px]">Our Blog</h1>
                 <h2 className="mt-5 mb-6 mx-5 max-w-[519px] text-xs vsm:text-base md:text-[22px] vsm:leading-[30.05px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>

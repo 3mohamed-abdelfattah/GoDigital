@@ -6,8 +6,8 @@ import * as Icons from "@/utils/icons.util"
 export const HowWorksSection = () => {
     return (
         <main className="mb-0 sm:mb-24">
-            <h1 className="text-center text-2xl lg:text-[40px] font-bold my-10 sm:my-12">How it works</h1>
-            <section className="flex flex-col sm:flex-row items-start vsm:items-stretch max-w-[1202px] mx-20 vsm:mx-10 xl:m-auto">
+            <h1 data-aos="zoom-in" className="text-center text-2xl lg:text-[40px] font-bold my-10 sm:my-12">How it works</h1>
+            <section data-aos="fade-right" className="flex flex-col sm:flex-row items-start vsm:items-stretch max-w-[1202px] mx-20 vsm:mx-10 xl:m-auto">
                 <CircleDashed title="Πες μας που πας και πότε">
                     <Icons.BoostIcon />
                 </CircleDashed>

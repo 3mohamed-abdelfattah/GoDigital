@@ -10,3 +10,4 @@ export * from './products/ForeignersPage'
 export * from './products/IntermediariesPage'
 // Profiles Pages
 export * from './profile/Profile'
+export * from './profile/ProfileContracts'

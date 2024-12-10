@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 // Components
 import { Header } from '@/components'
 // Images
@@ -30,13 +31,15 @@ export const Profile = () => {
                 </span>
 
                 {/* CONTRACTS Button */}
-                <button
-                    className="w-36 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] hover:bg-primaryColor hover:text-secondaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 bg-secondaryColor transition_all active:scale-110"
-                    style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
-                >
-                    ΣΥΜΒΟΛΑΙΑ
-                </button>
+                <Link to="/profile-contract">
+                    <button
+                        className="w-36 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] hover:bg-primaryColor hover:text-secondaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 bg-secondaryColor transition_all active:scale-110"
+                        style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
+                    >
+                        ΣΥΜΒΟΛΑΙΑ
+                    </button>
+                </Link>
             </section>
-        </ >
+        </>
     )
 }

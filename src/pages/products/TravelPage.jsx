@@ -1,18 +1,46 @@
 // Components
-import { Header, HeroProductsSection, CircleDashed, CircleGray, ArticleSlider, SuccessRectangle, GetQuote, GetQuoteSideBT } from "@/components"
+import { Header, HeroProductsSection, CircleDashed, CoveragesSection, CircleGray, ArticleSlider, SuccessRectangle, GetQuote, GetQuoteSideBT } from "@/components"
 // Icons
 import * as Icons from "@/utils/icons.util"
 
+// Array of objects containing title and description
+const slidesData = [
+    {
+        title: "Ιατρική Περίθαλψη",
+        description: "Για να μην ανησυχείτε για ξαφνικές ασθένειες ή ατυχήματα ενώ είστε στο εξωτερικό."
+    },
+    {
+        title: "Απώλεια Αποσκευών",
+        description: " Έχασαν τη βαλίτσα σας στο αεροδρόμιο! Είμαστε εδώ για να σας προσφέρουμε αποζημίωση για να συνεχίσετε το ταξίδι σας χωρίς ταλαιπωρία."
+    },
+    {
+        title: "Ακύρωση Ταξιδιού",
+        description: "Οι ακυρώσεις πτήσεων και τα απρόοπτα είναι στο παιχνίδι. Με την κάλυψη αυτή είστε χωρίς έννοιες για το οικονομικό κόστος τέτοιων περιστατικών. "
+    },
+    {
+        title: "Καθυστέρηση Πτήσεων",
+        description: "Οι καθυστερήσεις πτήσεων είναι συχνό φαινόμενο. Και σε αυτή τη περίπτωση σας έχουμε καλυμμένους."
+    },
+    {
+        title: "Προσωπικά Ατυχήματα",
+        description: "Εξασφαλίστε την οικονομική σας προστασία, για προσωπικά ατυχήματα που μπορεί να συμβούν ενώ ταξιδεύετε."
+    },
+    {
+        title: "Προσωπική Ευθύνη",
+        description: "Η κάλυψη αυτή θα σας προσφέρει προστασία από νομικές ευθύνες για τραυματισμούς ή ζημιές σε περιουσία που μπορεί να προκαλέσετε σε άλλους όσο ταξιδεύετε."
+    },
+];
+
 export const TravelPage = () => {
     return (
-        <main>
+        <>
             <Header />
+
             <HeroProductsSection headTitle="Ταξιδιωτική Ασφάλιση … ψηφιακά απλή!" Subtitle="Η ταξιδιωτική ασφάλιση επιτέλους πιο απλή από ποτέ!">
                 <span>
                     <h3 className="text-sm vsm:text-base lg:text-[22px] font-bold">Που ταξιδεύεις;</h3>
                     <h4 className="text-sm vsm:text-base lg:text-[22px]">Πες μας τον προορισμό σου και πάρε προσφορά!</h4>
                 </span>
-
                 {/* Select Input section*/}
                 <div className="relative w-full max-w-[450px] xl:max-w-[680px]">
                     <select defaultValue="" className="w-full appearance-none h-14 md:h-[74px] bg-white border border-gray-300 text-sm vsm:text-base font-bold rounded-[10px] text-[#7D7D7D] py-2 px-4 pr-10 shadow focus:outline-none focus:ring-2 focus:ring-orange-400">
@@ -39,31 +67,30 @@ export const TravelPage = () => {
                     </CircleDashed>
                     {/* Dashed Line */}
                     <span className="w-0 h-10 mx-14 vsm:m-auto sm:w-full sm:h-0 border-[2px] border-secondaryColor border-dashed"></span>
-
                     <CircleDashed title="Επέλεξε το πλάνο που σου ταιριάζει">
                         <Icons.QuestionIcon />
                     </CircleDashed>
                     {/* Dashed Line */}
                     <span className="w-0 h-10 mx-14 vsm:m-auto sm:w-full sm:h-0 border-[2px] border-secondaryColor border-dashed"></span>
-
                     <CircleDashed title="Πλήρωσε ηλεκτρονικά">
                         <Icons.SendIcon />
                     </CircleDashed>
                     {/* Dashed Line */}
                     <span className="w-0 h-10 mx-14 vsm:m-auto sm:w-full sm:h-0 border-[2px] border-secondaryColor border-dashed"></span>
-
                     <CircleDashed title="Πάρε το συμβόλαιο στη στιγμή">
                         <Icons.CashIcon />
                     </CircleDashed>
                 </article>
             </section>
 
+            {/* Our coverages Section */}
+            <CoveragesSection title="Οι καλύψεις μας" description="Οι καλύψεις που προσφέρουν τα πακέτα Ταξιδιωτικής Ασφάλισης της GoDigital, εξασφαλίζουν τη μέγιστη προστασία σύμφωνα με τις ανάγκες σας. Πάντα να βεβαιώνεστε ποιες καλύψεις περιλαμβάνονται στο πακέτο που έχετε επιλέξει." data={slidesData} />
+
             {/* Services Section */}
-            <section className="max-w-[1754px] bg-secondaryBgColor rounded-3xl lg:rounded-[58px] text-center mt-10 md:mt-[139px] mx-7 lg:mx-20 p-5 vsm:p-8 lg:p-12">
+            <section className="max-w-[1754px] bg-secondaryBgColor rounded-3xl lg:rounded-[58px] text-center mt-10 mx-7 lg:mx-20 p-5 vsm:p-8 lg:p-12">
                 {/* Head Titles */}
                 <h1 className="font-extrabold text-3xl sm:text-[40px]">Υπηρεσίες</h1>
                 <h2 className="max-w-[911px] mt-3 font-medium text-xs tiny:text-lg sm:text-[22px] sm:leading-[30.05px] mx-auto">Στην GoDigital φροντίζουμε να σας προσφέρουμε κορυφαίες υπηρεσίες που να κάνουν την εμπειρία σας μοναδική.</h2>
-
                 {/* Circles */}
                 <article className="flex flex-wrap gap-2 vsm:gap-5 items-start justify-evenly mt-10 md:mt-[91px]">
                     <CircleGray circleColor="secondaryColor" textColor="primaryBgColor">
@@ -83,7 +110,6 @@ export const TravelPage = () => {
                         <p className="font-normal mt-5 text-center">Φροντίζουμε να αποζημιώνεστε δίκαια και άμεσα</p>
                     </CircleGray>
                 </article>
-
                 {/* Quote Button */}
                 <button
                     className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 sm:mt-16 hover:bg-secondaryColor hover:text-primaryColor transition_all active:scale-110"
@@ -103,7 +129,6 @@ export const TravelPage = () => {
                     <h1 className="max-w-[683px] text-3xl sm:text-[40px] font-bold leading-[54.64px]">Γιατί GoDigital;</h1>
                     <h2 className="mt-5 mb-6 mx-2 sm:text-[22px] sm:leading-[30.05px]">Στην Go Digital απλοποιούμε την ασφάλιση ψηφιακά και φέρνουμε στην οθόνη σας τις καλύτερες επιλογές ταξιδιωτικής ασφάλισης.</h2>
                 </article>
-
                 {/* Services Rectangles */}
                 <article className="flex flex-wrap gap-3 vsm:gap-5 justify-center xl:justify-evenly items-center rounded-3xl md:rounded-b-[58px] text-center py-10 sm:py-16 mx-1 vsm:mx-4 xl:mx-20" >
                     <SuccessRectangle>Εύκολη Διαδικασία Αγοράς</SuccessRectangle>
@@ -115,8 +140,9 @@ export const TravelPage = () => {
 
             {/* Article Slide Section */}
             <ArticleSlider subTitle="Μάθε περισσότερα για την ταξιδιωτική ασφάλιση και τα ταξίδια" />
+            {/* Get Quote Bars */}
             <GetQuote />
             <GetQuoteSideBT />
-        </main>
+        </>
     )
 }

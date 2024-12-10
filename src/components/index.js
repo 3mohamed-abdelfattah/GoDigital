@@ -13,6 +13,7 @@ export * from './forBlog/SlidesSection'  // All Slides in Blog Page
 // All Products Page Components
 export * from './forProducts/HeroProductsSection'  // Hero Section for All Products Pages
 export * from './forProducts/WarrantiesSection'  // GoDigital offers the following types of Warranties Section
+export * from './forProducts/CoveragesSection'  // GoDigital Our coverages Section
 // Custom Components
 export * from './custom/PlaneLabel' // Oval shape with airplane logo inside and text
 export * from './custom/CircleDashed' // A circle with a logo inside and lines between it

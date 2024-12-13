@@ -23,14 +23,14 @@ export const BlogDetails = () => {
                     style={{ boxShadow: "0 10px 10px rgba(0, 0, 0, 0.2)" }}
                 >
                     {/* Hero Section Logo */}
-                    <img src={Symbol} alt="Go Digital Icon" className="w-[100px] md:w-[199px]" />
+                    <img data-aos="fade-in" src={Symbol} alt="Go Digital Icon" className="w-[100px] md:w-[199px]" />
                     {/* Hero Section Title */}
-                    <h1 className="max-w-[806px] mx-5 tiny:text-2xl vsm:text-4xl md:text-6xl font-semibold vsm:leading-[51.96px] md:leading-[81.96px]">Our Blog</h1>
+                    <h1 data-aos="zoom-in" className="max-w-[806px] mx-5 tiny:text-2xl vsm:text-4xl md:text-6xl font-semibold vsm:leading-[51.96px] md:leading-[81.96px]">Our Blog</h1>
                 </span>
 
                 {/* Travel Insurance */}
                 <span className="flex justify-center items-center gap-10 rounded-3xl md:rounded-[58px] py-4 md:py-8 mx-5 md:mx-20 text-primaryColor">
-                    <span className="flex flex-col justify-center items-center gap-4 md:gap-7">
+                    <span data-aos="zoom-in" className="flex flex-col justify-center items-center gap-4 md:gap-7">
                         <Icons.PlaneIcon />
                         <h3 className="font-bold md:text-3xl text-center">Travel Insurance</h3>
                     </span>
@@ -55,11 +55,11 @@ export const BlogDetails = () => {
                         {/* gradient white color */}
                         <div className="absolute inset-0 bg-gradient-to-t from-white to-transparent rounded-3xl sm:rounded-[32px]">
                             <span className="absolute flex flex-col gap-3 bottom-4 left-4 text-black">
-                                <h3 className="text-lg font-bold max-w-[446px] text-[28px]">{slide.title}</h3>
-                                <p className="text-sm max-w-[446px] text-[22px] font-semibold leading-[26.63px]">
+                                <h3 data-aos="fade-right" className="text-lg font-bold max-w-[446px] text-[28px]">{slide.title}</h3>
+                                <p data-aos="fade-right" className="text-sm max-w-[446px] text-[22px] font-semibold leading-[26.63px]">
                                     {slide.subTitle}
                                 </p>
-                                <Link to={slide.readMoreUrl} className="text-secondaryColor underline">
+                                <Link data-aos="fade-right" to={slide.readMoreUrl} className="text-secondaryColor underline">
                                     Read More
                                 </Link>
                             </span>
@@ -77,21 +77,22 @@ export const BlogDetails = () => {
                 <aside className="flex flex-col justify-center items-center md:items-start md:justify-around h-full">
                     {/* Head Titles */}
                     <span>
-                        <h1 className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-bold max-w-[774px]">Travel Insurance</h1>
-                        <h2 className="text-sm sm:text-xl lg:text-[22px] max-w-[572px] mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                        <h1 data-aos="zoom-in" className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-bold max-w-[774px]">Travel Insurance</h1>
+                        <h2 data-aos="zoom-in" className="text-sm sm:text-xl lg:text-[22px] max-w-[572px] mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
                     </span>
                     {/* Quote ,More Info */}
                     <aside className="flex flex-col justify-center items-center md:justify-stretch md:items-start gap-5 mt-8 xl:mt-0">
 
                         <ul className="flex flex-col gap-1 list-disc text-sm sm:text-xl lg:text-[22px]">
-                            <li>Lorem ipsum dolor sit amet, consectetur</li>
-                            <li>adipiscing elit, sed do eiusmod tempor</li>
-                            <li>incididunt ut labore et dolore magna aliqua.</li>
+                            <li data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur</li>
+                            <li data-aos="fade-right">adipiscing elit, sed do eiusmod tempor</li>
+                            <li data-aos="fade-right">incididunt ut labore et dolore magna aliqua.</li>
                         </ul>
 
                         {/* Quote Button */}
                         <span className="flex gap-5">
                             <button
+                                data-aos="fade-right"
                                 className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-sm vsm:text-base sm:text-lg font-bold hover:bg-primaryColor hover:text-secondaryColor transition_all active:scale-110"
                                 style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
                             >
@@ -100,6 +101,7 @@ export const BlogDetails = () => {
 
                             {/* More Info Button */}
                             <button
+                                data-aos="fade-right"
                                 className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-sm vsm:text-base sm:text-lg font-bold hover:bg-primaryColor hover:text-secondaryColor transition_all active:scale-110"
                                 style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
                             >
@@ -110,7 +112,7 @@ export const BlogDetails = () => {
                 </aside>
 
                 {/* AirPlane Icon */}
-                <span className="p-5">
+                <span className="p-5" data-aos="fade-left">
                     <Icons.AirPlaneIcon />
                 </span>
             </section>

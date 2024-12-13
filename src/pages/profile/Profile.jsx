@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 // Components
 import { Header } from '@/components'
 // Images
@@ -18,7 +19,7 @@ export const Profile = () => {
                 style={{ boxShadow: "0 10px 10px rgba(0, 0, 0, 0.2)" }}
             >
                 {/* Hero Section Logo */}
-                <img src={Symbol} alt="Go Digital Icon" className="w-[100px] md:w-[199px]" />
+                <img data-aos="fade-in" src={Symbol} alt="Go Digital Icon" className="w-[100px] md:w-[199px]" />
                 {/* User Name */}
                 <h1 className="max-w-[806px] mx-5 tiny:text-2xl vsm:text-4xl md:text-5xl font-semibold vsm:leading-[51.96px] md:leading-[81.96px]">Mohamed Mohamed</h1>
 
@@ -30,13 +31,15 @@ export const Profile = () => {
                 </span>
 
                 {/* CONTRACTS Button */}
-                <button
-                    className="w-36 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] hover:bg-primaryColor hover:text-secondaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 bg-secondaryColor transition_all active:scale-110"
-                    style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
-                >
-                    ΣΥΜΒΟΛΑΙΑ
-                </button>
+                <Link to="/profile-contract">
+                    <button
+                        className="w-36 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] hover:bg-primaryColor hover:text-secondaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 bg-secondaryColor transition_all active:scale-110"
+                        style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
+                    >
+                        ΣΥΜΒΟΛΑΙΑ
+                    </button>
+                </Link>
             </section>
-        </ >
+        </>
     )
 }

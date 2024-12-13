@@ -5,18 +5,18 @@ export const WarrantiesSection = () => {
     return (
         <section className="max-w-[1754px] bg-primaryBgColor rounded-3xl lg:rounded-[58px] text-center mt-10 md:mt-[139px] mx-7 lg:mx-20 p-5 vsm:p-8 lg:p-12">
             {/* Head Titles */}
-            <h1 className="font-extrabold text-2xl leading-[50px] sm:text-[40px] text-primaryColor">H GoDigital προσφέρει τα πιο κάτω είδη Εγγυήσεων</h1>
+            <h1 data-aos="zoom-in" className="font-extrabold text-2xl leading-[50px] sm:text-[40px] text-primaryColor">H GoDigital προσφέρει τα πιο κάτω είδη Εγγυήσεων</h1>
 
             {/* Warranties */}
             <article className="flex flex-wrap gap-2 vsm:gap-5 items-center justify-evenly mt-10 md:mt-[91px]">
-                <p className={styles.paragraphStyle}>Εγγύηση Συμμετοχής</p>
-                <p className={styles.paragraphStyle}>Εγγύηση Προκαταβολής</p>
-                <p className={styles.paragraphStyle}>Εγγύησης Καλής Εκτέλεσης</p>
-                <p className={styles.paragraphStyle}>Εγγύηση Καλής Πληρωμής</p>
-                <p className={styles.paragraphStyle}>Εγγύηση Καλής Λειτουργίας και Συντήρησης</p>
-                <p className={styles.paragraphStyle}>Τελωνείου</p>
-                <p className={styles.paragraphStyle}>Για τμήμα Μετανάστευσης</p>
-                <p className={styles.paragraphStyle}>Ρυθμιστική Αρχή Ενέργειας (Ρ.Α.Ε.)</p>
+                <p data-aos="zoom-in" className={styles.paragraphStyle}>Εγγύηση Συμμετοχής</p>
+                <p data-aos="zoom-in" className={styles.paragraphStyle}>Εγγύηση Προκαταβολής</p>
+                <p data-aos="zoom-in" className={styles.paragraphStyle}>Εγγύησης Καλής Εκτέλεσης</p>
+                <p data-aos="zoom-in" className={styles.paragraphStyle}>Εγγύηση Καλής Πληρωμής</p>
+                <p data-aos="zoom-in" className={styles.paragraphStyle}>Εγγύηση Καλής Λειτουργίας και Συντήρησης</p>
+                <p data-aos="zoom-in" className={styles.paragraphStyle}>Τελωνείου</p>
+                <p data-aos="zoom-in" className={styles.paragraphStyle}>Για τμήμα Μετανάστευσης</p>
+                <p data-aos="zoom-in" className={styles.paragraphStyle}>Ρυθμιστική Αρχή Ενέργειας (Ρ.Α.Ε.)</p>
             </article>
         </section>
     )

@@ -16,6 +16,26 @@ export const CoveragesSection = ({ title, description, data }) => {
         }));
     };
 
+    // handle mouse enter for larger screens
+    const handleMouseEnter = (index) => {
+        if (window.innerWidth > 868) {
+            setToggles((prev) => ({
+                ...prev,
+                [index]: true,
+            }));
+        }
+    };
+
+    // handle mouse leave for larger screens
+    const handleMouseLeave = (index) => {
+        if (window.innerWidth > 868) {
+            setToggles((prev) => ({
+                ...prev,
+                [index]: false,
+            }));
+        }
+    };
+
     return (
         <main className="flex flex-col justify-center items-center pt-16 w-full">
             <h1 data-aos="zoom-in" className="text-3xl md:text-4xl font-extrabold text-primaryBgColor text-center">
@@ -39,8 +59,8 @@ export const CoveragesSection = ({ title, description, data }) => {
                         breakpoints: {
                             1500: { perPage: 3 },
                             1024: { perPage: 2 },
-                            680: { perPage: 1, height: "430px", arrows: true, },
-                            460: { height: "380px", },
+                            680: { perPage: 1, height: "430px", arrows: true },
+                            460: { height: "380px" },
                         },
                     }}
                     className="w-full"
@@ -49,8 +69,10 @@ export const CoveragesSection = ({ title, description, data }) => {
                     {data.map((slide, index) => (
                         <SplideSlide key={index} className="flex justify-center w-full">
                             <article
-                                onClick={() => handleToggle(index)}
-                                className="relative flex justify-center w-80 h-72 vsm:w-[350px] mt-5 vsm:h-[340px] sm:w-[381px] sm:h-[373px] bg-primaryBgColor rounded-b-[30px] rounded-t-[20px] cursor-pointer mx-2"
+                                onClick={() => handleToggle(index)} // Toggle on click
+                                onMouseEnter={() => handleMouseEnter(index)} // Show on hover for large screens
+                                onMouseLeave={() => handleMouseLeave(index)} // Hide on hover out for large screens
+                                className={`relative flex justify-center w-80 h-72 vsm:w-[350px] mt-5 vsm:h-[340px] sm:w-[381px] sm:h-[373px] bg-primaryBgColor rounded-b-[30px] rounded-t-[20px] mx-2 ${slide.description ? 'cursor-pointer' : ''}`} // Show cursor-pointer only if description exists
                             >
                                 <span className="mt-16" data-aos="zoom-in">
                                     <Icons.MedicalIcon />

@@ -78,7 +78,19 @@ export const CoveragesSection = ({ title, description, data }) => {
                                     <Icons.MedicalIcon />
                                 </span>
                                 <span className="absolute bottom-0 right-0 w-full bg-secondaryBgColor py-8 vsm:py-10 rounded-[20px] text-center overflow-hidden">
-                                    <h3 data-aos="zoom-in" className="sm:text-[22px] font-bold">{slide.title}</h3>
+                                    <h3
+                                        data-aos="zoom-in"
+                                        className="sm:text-[22px] font-bold"
+                                    >
+                                        {slide.title === "Θάνατος από Ατύχημα" ? (
+                                            <>
+                                                Θάνατος <br /> από Ατύχημα
+                                            </>
+                                        ) : (
+                                            slide.title
+                                        )}
+                                    </h3>
+
                                     {toggles[index] && (
                                         <h4 data-aos="zoom-in" className="text-sm sm:text-lg px-1">
                                             {slide.description}

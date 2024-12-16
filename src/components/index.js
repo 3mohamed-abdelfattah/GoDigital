@@ -6,7 +6,6 @@ export * from './bars/GetQuoteSideBT' // Get Quote button for large Screen in pr
 export * from './forHome/HeroSection' // Hero Section in Home Page
 export * from './forHome/HowWorksSection'
 export * from './forHome/WhyDigitalSection'
-export * from './forHome/ServicesSection'
 // BlogPage Components
 export * from './forBlog/HeroBlogSection' // Hero Section in Blog Page
 export * from './forBlog/SlidesSection'  // All Slides in Blog Page

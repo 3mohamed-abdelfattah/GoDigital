@@ -8,7 +8,7 @@ import ArticleImg3 from "@/assets/images/forHome/article3.jpeg"
 
 export const ArticleSlider = ({
     title = 'Άρθρα',
-    subTitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+    subTitle = 'Χρήσιμα άρθρα για την ασφάλιση που σας βοηθούν να πάρετε τις σωστές αποφάσεις!',
     url,
     directionStyle = 'lg:flex-row lg:pl-32',
     buttonStyle = 'bg-secondaryColor hover:bg-primaryBgColor',

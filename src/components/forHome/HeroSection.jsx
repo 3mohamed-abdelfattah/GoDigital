@@ -15,8 +15,8 @@ export const HeroSection = () => {
                 {/* Hero Section Logo */}
                 <img data-aos="fade-in" src={Symbol} alt="Go Digital Icon" className="w-[100px] md:w-[199px]" />
                 {/* Hero Section Titles */}
-                <h1 className="max-w-[806px] mx-5 tiny:text-2xl vsm:text-4xl md:text-6xl font-semibold vsm:leading-[51.96px] md:leading-[81.96px]">Lorem ipsum dolor sit amet consectetur adipiscing</h1>
-                <h2 className="mt-5 mb-6 mx-5 max-w-[519px] text-xs vsm:text-base md:text-[22px] vsm:leading-[30.05px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+                <h1 className="max-w-[806px] mx-5 tiny:text-2xl vsm:text-4xl md:text-6xl font-semibold vsm:leading-[51.96px] md:leading-[81.96px]">Η Ασφάλιση μόλις έγινε ψηφιακά … απλή!</h1>
+                <h2 className="mt-5 mb-6 mx-5 max-w-[693px] text-xs vsm:text-base md:text-[22px] vsm:leading-[30.05px]">Καλωσορίσατε στη GoDigital! Την πλατφόρμα ασφάλισης που τα κάνει τη διαδικασία πιο εύκολη και απλή από ποτέ! Στη GoDigital η ασφάλιση προσαρμόζεται στις δικές σας ανάγκες, με ένα σύγχρονο τρόπο που ταιριάζει στην απαιτητική σας καθημερινότητα!</h2>
             </section>
 
             {/* Second Hero Section [Plane Labels] */}

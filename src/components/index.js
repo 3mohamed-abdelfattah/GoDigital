@@ -21,3 +21,4 @@ export * from './custom/SuccessRectangle' // A square with a check mark inside i
 export * from './custom/ArticleSlider' // Full Article Section ( Slider and side title section)
 export * from './custom/ImageSlider' // Splide library options and all slides component
 export * from './custom/SplideSlider' //  For Each image in Slider
+export * from './custom/GetQuotePopup.jsx' //  Pop up Quote 

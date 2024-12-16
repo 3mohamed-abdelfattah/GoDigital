@@ -1,7 +1,11 @@
 // Component
 import { CircleGray } from "@/components"
+import { useState } from "react";
+import { GetQuotePopup } from "../custom/GetQuotePopup";
 
 export const WhyDigitalSection = () => {
+    const [showPopup, setShowPopup] = useState(false);
+
     return (
         <main className="max-w-[1754px] xl:h-[615px] bg-secondaryColor rounded-3xl lg:rounded-[58px] text-center mt-10 md:mt-[139px] mx-7 lg:mx-20 p-5 vsm:p-8 lg:p-12">
             {/* Head Titles */}
@@ -20,10 +24,14 @@ export const WhyDigitalSection = () => {
             <button
                 className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 sm:mt-16 hover:bg-primaryColor hover:text-secondaryColor transition_all active:scale-110"
                 style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
+                onClick={() => setShowPopup(true)} // Open popup
                 data-aos="zoom-in"
             >
                 Get Quote
             </button>
+
+            {/* Show Popup */}
+            {showPopup && <GetQuotePopup onClose={() => setShowPopup(false)} />}
 
         </main>
     )

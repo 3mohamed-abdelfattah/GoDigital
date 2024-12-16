@@ -2,6 +2,7 @@
 import { PlaneLabel } from "@/components"
 // Images
 import Symbol from "@/assets/images/icon.png"
+import { Link } from "react-router-dom"
 
 export const HeroSection = () => {
     return (
@@ -21,11 +22,25 @@ export const HeroSection = () => {
 
             {/* Second Hero Section [Plane Labels] */}
             <section data-aos="fade-right" className="flex flex-wrap justify-center items-center gap-10 rounded-3xl md:rounded-[58px] text-center text-primaryColor pt-8 vsm:pb-8 md:pt-[78px] md:pb-16 mx-5 md:mx-20">
-                <PlaneLabel>Travel Insurance</PlaneLabel>
-                <PlaneLabel>Προσωπικών Ατυχημάτων Αλλοδαπών</PlaneLabel>
-                <PlaneLabel>Ευθύνης Ασφαλιστικών Διαμεσολαβητών</PlaneLabel>
-                <PlaneLabel>Ευθύνης Οδικού Μεταφορέα</PlaneLabel>
-                <PlaneLabel rotateBox="rotate-90" hight="h-[241.8px]" rotateText="-rotate-90">Εγγυητικές Επιστολές</PlaneLabel>
+                <Link to="/products/travel">
+                    <PlaneLabel>Travel Insurance</PlaneLabel>
+                </Link>
+
+                <Link to="/products/medical-insurance-foreigners">
+                    <PlaneLabel>Προσωπικών Ατυχημάτων Αλλοδαπών</PlaneLabel>
+                </Link>
+
+                <Link to="/products/professional-liability-insurance-intermediaries">
+                    <PlaneLabel>Ευθύνης Ασφαλιστικών Διαμεσολαβητών</PlaneLabel>
+                </Link>
+
+                <Link to="/products/road-carrier-professional-liability">
+                    <PlaneLabel>Ευθύνης Οδικού Μεταφορέα</PlaneLabel>
+                </Link>
+
+                <Link to="/products/guarantees">
+                    <PlaneLabel rotateBox="rotate-90" hight="h-[241.8px]" rotateText="-rotate-90">Εγγυητικές Επιστολές</PlaneLabel>
+                </Link>
             </section>
 
         </main>

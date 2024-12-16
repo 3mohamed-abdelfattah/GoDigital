@@ -3,20 +3,20 @@ import { ArticleSlider } from "@/components";
 export const SlidesSection = () => {
     return (
         <>
-            {/* Gray LTR SLide */}
-            <ArticleSlider title="Travel" url="/blog/travel-1" />
+            {/* Travel LTR SLide */}
+            <ArticleSlider title="Travel" subTitle="Μάθε περισσότερα για την ταξιδιωτική ασφάλιση και τα ταξίδια" url="/blog/travel" />
 
-            {/* Orange RTL SLide */}
-            <ArticleSlider title="Travel" url="/blog/travel-2" directionStyle="lg:flex-row-reverse lg:pr-32" buttonStyle="bg-primaryBgColor hover:bg-secondaryColor" backgroundStyle="bg-secondaryColor left-0 rounded-e-[58px]" direction="rtl" />
+            {/* Εγγυητικές RTL SLide */}
+            <ArticleSlider title="Εγγυητικές" subTitle="Μάθε περισσότερα για την ασφάλιση και τις εγγυητικές επιστολές." url="/blog/guarantees" directionStyle="lg:flex-row-reverse lg:pr-32" buttonStyle="bg-primaryBgColor hover:bg-secondaryColor" backgroundStyle="bg-secondaryColor left-0 rounded-e-[58px]" direction="rtl" />
 
-            {/* Gray LTR SLide */}
-            <ArticleSlider title="Travel" url="/blog/travel-3" />
+            {/* Ευθύνης Οδικού Μεταφορέα LTR SLide */}
+            <ArticleSlider title="Ευθύνης Οδικού Μεταφορέα" subTitle="Μάθε περισσότερα για την ασφάλιση και τις μεταφορές." url="/blog/road-carrier-professional-liability" />
 
-            {/* Orange RTL SLide */}
-            <ArticleSlider title="Travel" url="/blog/travel-4" directionStyle="lg:flex-row-reverse lg:pr-32" buttonStyle="bg-primaryBgColor hover:bg-secondaryColor" backgroundStyle="bg-secondaryColor left-0 rounded-e-[58px]" direction="rtl" />
+            {/* Προσωπικών Ατυχημάτων Αλλοδαπών RTL SLide */}
+            <ArticleSlider title="Προσωπικών Ατυχημάτων Αλλοδαπών" subTitle="Μάθε περισσότερα για την ασφάλιση και την υγεία" url="/blog/medical-insurance-foreigners" directionStyle="lg:flex-row-reverse lg:pr-32" buttonStyle="bg-primaryBgColor hover:bg-secondaryColor" backgroundStyle="bg-secondaryColor left-0 rounded-e-[58px]" direction="rtl" />
 
-            {/* Gray LTR SLide */}
-            <ArticleSlider title="Travel" url="/blog/travel-5" />
+            {/* Ευθύνης Ασφαλιστικών Διαμεσολαβητών LTR SLide */}
+            <ArticleSlider title="Ευθύνης Ασφαλιστικών Διαμεσολαβητών" subTitle="Μάθε περισσότερα για την ασφάλιση και τη διαμεσολάβηση." url="/blog/professional-liability-insurance-intermediaries" />
         </>
     )
 }

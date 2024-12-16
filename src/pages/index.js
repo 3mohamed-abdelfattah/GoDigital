@@ -1,7 +1,11 @@
 export * from './home/HomePage'
-// Blog Pages
+// Blog Pages and each detail page
 export * from './blog/BlogPage'
-export * from './blog/BlogDetails'
+export * from './blog/blogDetail/TravelDetail'
+export * from './blog/blogDetail/GuaranteesDetail'
+export * from './blog/blogDetail/LiabilityDetail'
+export * from './blog/blogDetail/ForeignersDetail'
+export * from './blog/blogDetail/IntermediariesDetail'
 // All Products Pages
 export * from './products/TravelPage'
 export * from './products/GuaranteesPage'

@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Pages
-import { HomePage, ForeignersPage, GuaranteesPage, IntermediariesPage, LiabilityPage, TravelPage, BlogPage, BlogDetails, Profile, ProfileContracts } from "@/pages";
+import { HomePage, ForeignersPage, GuaranteesPage, IntermediariesPage, LiabilityPage, TravelPage, BlogPage, TravelDetail, GuaranteesDetail, LiabilityDetail, ForeignersDetail, IntermediariesDetail, Profile, ProfileContracts } from "@/pages";
 import { Header } from "../components/bars/Header";
 
 const router = createBrowserRouter([
@@ -33,8 +33,24 @@ const router = createBrowserRouter([
         element: <BlogPage />,
     },
     {
-        path: "/blog/:id",
-        element: <BlogDetails />,
+        path: "/blog/travel",
+        element: <TravelDetail />,
+    },
+    {
+        path: "/blog/guarantees",
+        element: <GuaranteesDetail />,
+    },
+    {
+        path: "/blog/road-carrier-professional-liability",
+        element: <LiabilityDetail />,
+    },
+    {
+        path: "/blog/medical-insurance-foreigners",
+        element: <ForeignersDetail />,
+    },
+    {
+        path: "/blog/professional-liability-insurance-intermediaries",
+        element: <IntermediariesDetail />,
     },
     {
         path: "/profile",

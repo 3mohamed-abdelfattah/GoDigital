@@ -1,8 +1,8 @@
+import { Link } from "react-router-dom"
 // Component
 import { PlaneLabel } from "@/components"
 // Images
 import Symbol from "@/assets/images/icon.png"
-import { Link } from "react-router-dom"
 
 export const HeroSection = () => {
     return (

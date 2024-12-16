@@ -50,7 +50,7 @@ export const CoveragesSection = ({ title, description, data }) => {
                         <SplideSlide key={index} className="flex justify-center w-full">
                             <article
                                 onClick={() => handleToggle(index)}
-                                className="relative flex justify-center w-80 h-72 vsm:w-[350px] mt-5 vsm:h-[340px] sm:w-[381px] sm:h-[373px] bg-primaryBgColor rounded-[20px] overflow-hidden cursor-pointer mx-2"
+                                className="relative flex justify-center w-80 h-72 vsm:w-[350px] mt-5 vsm:h-[340px] sm:w-[381px] sm:h-[373px] bg-primaryBgColor rounded-b-[30px] rounded-t-[20px] cursor-pointer mx-2"
                             >
                                 <span className="mt-16" data-aos="zoom-in">
                                     <Icons.MedicalIcon />

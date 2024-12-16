@@ -23,7 +23,7 @@ export const WarrantiesSection = () => {
                 </span>
             </article>
 
-            {/* Warranties for mobile view */}
+            {/* Warranties custom arrangement for mobile view */}
             <article className="flex md:hidden flex-col justify-center items-center gap-5 my-10">
                 <div className="flex flex-col md:flex-row justify-around gap-5 w-full">
                     <span className="flex gap-3">

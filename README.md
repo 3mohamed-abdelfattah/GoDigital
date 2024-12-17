@@ -52,6 +52,7 @@ The project follows a well-organized folder structure for scalability and mainta
             └── ArticleSlider.jsx
             └── CircleDashed.jsx
             └── CircleGray.jsx
+            └── GetQuotePopup.jsx
             └── ImageSlider.jsx
             └── PlaneLabel.jsx
             └── SplideSlider.jsx
@@ -62,7 +63,6 @@ The project follows a well-organized folder structure for scalability and mainta
         └── 📁forHome
             └── HeroSection.jsx
             └── HowWorksSection.jsx
-            └── ServicesSection.jsx
             └── WhyDigitalSection.jsx
         └── 📁forProducts
             └── CoveragesSection.jsx
@@ -71,7 +71,12 @@ The project follows a well-organized folder structure for scalability and mainta
         └── index.js
     └── 📁pages
         └── 📁blog
-            └── BlogDetails.jsx
+            └── 📁blogDetail
+                └── ForeignersDetail.jsx
+                └── GuaranteesDetail.jsx
+                └── IntermediariesDetail.jsx
+                └── LiabilityDetail.jsx
+                └── TravelDetail.jsx
             └── BlogPage.jsx
         └── 📁home
             └── HomePage.jsx
@@ -84,6 +89,12 @@ The project follows a well-organized folder structure for scalability and mainta
         └── 📁profile
             └── Profile.jsx
             └── ProfileContracts.jsx
+        └── 📁quote
+            └── ForeignersQuote.jsx
+            └── GuaranteeQuote.jsx
+            └── IntermediariesQuote.jsx
+            └── LiabilityQuote.jsx
+            └── TravelQuote.jsx
         └── index.js
     └── 📁router
         └── index.jsx
@@ -91,6 +102,8 @@ The project follows a well-organized folder structure for scalability and mainta
         └── global.css
         └── slider.css
     └── 📁utils
+        └── 📁functions
+            └── ScrollToTop.util.js
         └── icons.util.jsx
     └── App.jsx
     └── main.jsx

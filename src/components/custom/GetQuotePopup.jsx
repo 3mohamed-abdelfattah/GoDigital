@@ -4,11 +4,11 @@ import * as Icons from "@/utils/icons.util";
 
 // Product options
 const products = [
-    { label: "Ταξιδιωτική", route: "" },
-    { label: "Προσωπικών Ατυχημάτων Αλλοδαπών", route: "" },
-    { label: "Ευθύνης Ασφαλιστικών Διαμεσολαβητών", route: "" },
-    { label: "Ευθύνης Οδικού Μεταφορά", route: "" },
-    { label: "Εγγυήσεων", route: "" },
+    { label: "Ταξιδιωτική", route: "/get-a-quote-travel" },
+    { label: "Προσωπικών Ατυχημάτων Αλλοδαπών", route: "/get-a-quote-foreigners" },
+    { label: "Ευθύνης Ασφαλιστικών Διαμεσολαβητών", route: "/get-a-quote-intermediaries" },
+    { label: "Ευθύνης Οδικού Μεταφορά", route: "/get-a-quote-liability" },
+    { label: "Εγγυήσεων", route: "/get-a-quote-guarantee" },
 ];
 
 export const GetQuotePopup = ({ onClose }) => {

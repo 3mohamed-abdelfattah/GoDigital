@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 // Components
 import { Header, HeroProductsSection, CircleDashed, CoveragesSection, CircleGray, ArticleSlider, SuccessRectangle, WarrantiesSection, GetQuote, GetQuoteSideBT } from "@/components"
 // Icons
@@ -29,7 +30,7 @@ export const GuaranteesPage = () => {
         <>
             <Header />
 
-            <HeroProductsSection headTitle="Ασφάλιση Εγγυήσεων … ψηφιακά απλά!" Subtitle="Εξασφαλίστε την εγγυητική επιστολή που χρειάζεστε χωρίς δέσμευση κεφαλαίων!">
+            <HeroProductsSection headTitle="Ασφάλιση Εγγυήσεων … ψηφιακά απλά!" Subtitle="Εξασφαλίστε την εγγυητική επιστολή που χρειάζεστε χωρίς δέσμευση κεφαλαίων!" url="/get-a-quote-guarantee">
                 <h3 data-aos="fade-right" className="text-sm sm:text-base lg:text-[22px] font-bold">Διάλεξε τον τύπο εγγύησης για να ξεκινήσεις τη διαδικασία προσφοράς!</h3>
                 {/* Select Input section*/}
                 <div data-aos="fade-right" className="relative w-full max-w-[450px] xl:max-w-[680px]">
@@ -97,13 +98,15 @@ export const GuaranteesPage = () => {
                     </CircleGray>
                 </article>
                 {/* Quote Button */}
-                <button
-                    className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 sm:mt-16 hover:bg-secondaryColor hover:text-primaryColor transition_all active:scale-110"
-                    style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
-                    data-aos="zoom-in"
-                >
-                    Get Quote
-                </button>
+                <Link to="/get-a-quote-guarantee">
+                    <button
+                        className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 sm:mt-16 hover:bg-secondaryColor hover:text-primaryColor transition_all active:scale-110"
+                        style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
+                        data-aos="zoom-in"
+                    >
+                        Get Quote
+                    </button>
+                </Link>
             </section>
 
             {/* Why GoDigital Section*/}
@@ -127,8 +130,8 @@ export const GuaranteesPage = () => {
             {/* Article Slide Section */}
             <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τις εγγυητικές επιστολές." />
             {/* Get Quote Bars */}
-            <GetQuote />
-            <GetQuoteSideBT />
+            <GetQuote url="/get-a-quote-guarantee" />
+            <GetQuoteSideBT url="/get-a-quote-guarantee" />
         </>
     )
 }

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 // Components
 import { Header, HeroProductsSection, CircleDashed, CircleGray, CoveragesSection, ArticleSlider, SuccessRectangle, GetQuote, GetQuoteSideBT } from "@/components"
 // Icons
@@ -16,7 +17,7 @@ export const LiabilityPage = () => {
         <>
             <Header />
 
-            <HeroProductsSection headTitle="Ασφάλιση Επαγγελματικής Ευθύνης Οδικού Μεταφορέα!" Subtitle="Εξασφαλίστε την εργασία σας ότι κι αν συμβεί … ψηφιακά και απλά!">
+            <HeroProductsSection headTitle="Ασφάλιση Επαγγελματικής Ευθύνης Οδικού Μεταφορέα!" Subtitle="Εξασφαλίστε την εργασία σας ότι κι αν συμβεί … ψηφιακά και απλά!" url="/get-a-quote-liability">
                 <h3 data-aos="fade-right" className="text-sm sm:text-base lg:text-[22px] font-bold">Πες μας τον αριθμό εγγραφής του οχήματος σου και πάρε προσφορά!</h3>
                 {/* Input section*/}
                 <input data-aos="fade-right" placeholder="Αριθμός εγγραφής οχήματος" className="w-full max-w-[450px] xl:max-w-[680px] appearance-none h-14 md:h-[74px] bg-white border border-gray-300 text-sm vsm:text-base font-bold rounded-[10px] text-[#7D7D7D] py-2 px-4 pr-10 shadow focus:outline-none focus:ring-2 focus:ring-orange-400" />
@@ -71,13 +72,15 @@ export const LiabilityPage = () => {
                     </CircleGray>
                 </article>
                 {/* Quote Button */}
-                <button
-                    className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 sm:mt-16 hover:bg-secondaryColor hover:text-primaryColor transition_all active:scale-110"
-                    style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
-                    data-aos="zoom-in"
-                >
-                    Get Quote
-                </button>
+                <Link to="/get-a-quote-liability">
+                    <button
+                        className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 sm:mt-16 hover:bg-secondaryColor hover:text-primaryColor transition_all active:scale-110"
+                        style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
+                        data-aos="zoom-in"
+                    >
+                        Get Quote
+                    </button>
+                </Link>
             </section>
 
             {/* Why GoDigital Section*/}
@@ -101,8 +104,8 @@ export const LiabilityPage = () => {
             {/* Article Slide Section */}
             <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τις μεταφορές." />
             {/* Get Quote Bars */}
-            <GetQuote />
-            <GetQuoteSideBT />
+            <GetQuote url="/get-a-quote-liability" />
+            <GetQuoteSideBT url="/get-a-quote-liability" />
         </>
     )
 }

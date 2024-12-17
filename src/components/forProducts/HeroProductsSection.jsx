@@ -1,7 +1,8 @@
 // Icons
 import * as Icons from "@/utils/icons.util"
+import { Link } from "react-router-dom"
 
-export const HeroProductsSection = ({ headTitle, Subtitle, children }) => {
+export const HeroProductsSection = ({ headTitle, Subtitle, url, children }) => {
     return (
         <main
             className="flex flex-col-reverse md:flex-row justify-center md:justify-evenly items-center bg-secondaryColor text-center md:text-left rounded-3xl p-5 mx-6 lg:mx-20 md:rounded-[58px] text-primaryColor py-6 md:py-12 xl:h-[590px]"
@@ -19,13 +20,15 @@ export const HeroProductsSection = ({ headTitle, Subtitle, children }) => {
                     {/* Select Input and his titles */}
                     {children}
                     {/* Quote Button */}
-                    <button
-                        data-aos="fade-right"
-                        className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-sm vsm:text-base sm:text-lg font-bold hover:bg-primaryColor hover:text-secondaryColor transition_all active:scale-110"
-                        style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
-                    >
-                        Get Quote
-                    </button>
+                    <Link to={url}>
+                        <button
+                            data-aos="fade-right"
+                            className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-sm vsm:text-base sm:text-lg font-bold hover:bg-primaryColor hover:text-secondaryColor transition_all active:scale-110"
+                            style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
+                        >
+                            Get Quote
+                        </button>
+                    </Link>
                 </aside>
             </section>
 

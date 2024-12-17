@@ -170,14 +170,16 @@ export const QuotePlaneIcon = () => (
 );
 
 export const QuoteDurationIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+    <svg
+        className="w-24 h-24 sm:w-[120px] sm:h-[120px]"
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
         <path d="M60 36.8V60L74.5 74.5001" stroke="#F15B2E" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M31 9.75936C39.531 4.82443 49.4359 2 60 2C92.0322 2 118 27.9675 118 60C118 92.0322 92.0322 118 60 118C27.9675 118 2 92.0322 2 60C2 49.4359 4.82443 39.531 9.75936 31" stroke="#F15B2E" stroke-width="3.75" stroke-linecap="round" />
     </svg>
 );
 
 export const QuoteBirthIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="109" height="109" viewBox="0 0 109 109" fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-24 h-24 sm:w-[120px] sm:h-[120px]" viewBox="0 0 109 109" fill="none">
         <path d="M3 106H106" stroke="#F15B2E" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M8.71631 106V59.65C8.71631 51.101 16.3898 44.2 25.8658 44.2H83.0824C92.5584 44.2 100.232 51.101 100.232 59.65V106" stroke="#F15B2E" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M21.3342 44.2V29.6255C21.3342 23.4455 26.8962 18.45 33.7972 18.45H75.2549C82.1044 18.45 87.6664 23.4455 87.6664 29.6255V44.2" stroke="#F15B2E" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />

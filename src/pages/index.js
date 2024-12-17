@@ -12,6 +12,12 @@ export * from './products/GuaranteesPage'
 export * from './products/LiabilityPage'
 export * from './products/ForeignersPage'
 export * from './products/IntermediariesPage'
+// Get a Quote Pages
+export * from './quote/TravelQuote'
+export * from './quote/ForeignersQuote'
+export * from './quote/GuaranteeQuote'
+export * from './quote/IntermediariesQuote'
+export * from './quote/LiabilityQuote'
 // Profiles Pages
 export * from './profile/Profile'
 export * from './profile/ProfileContracts'

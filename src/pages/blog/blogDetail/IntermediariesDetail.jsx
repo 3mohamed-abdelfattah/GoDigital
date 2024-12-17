@@ -87,12 +87,14 @@ export const IntermediariesDetail = () => {
 
                         {/* Quote Button */}
                         <span className="flex gap-5">
-                            <button
-                                className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-sm vsm:text-base sm:text-lg font-bold hover:bg-primaryColor hover:text-secondaryColor transition_all active:scale-110"
-                                style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
-                            >
-                                Get Quote
-                            </button>
+                            <Link to="/get-a-quote-intermediaries">
+                                <button
+                                    className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-sm vsm:text-base sm:text-lg font-bold hover:bg-primaryColor hover:text-secondaryColor transition_all active:scale-110"
+                                    style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
+                                >
+                                    Get Quote
+                                </button>
+                            </Link>
 
                             {/* More Info Button */}
                             <Link to="/products/professional-liability-insurance-intermediaries">

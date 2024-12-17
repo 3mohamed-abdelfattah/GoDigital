@@ -114,7 +114,7 @@ export const ForeignersPage = () => {
             </section>
 
             {/* Article Slide Section */}
-            <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και την υγεία" />
+            <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και την υγεία" url="/blog/medical-insurance-foreigners" />
             {/* Get Quote Bars */}
             <GetQuote url="/get-a-quote-foreigners" />
             <GetQuoteSideBT url="/get-a-quote-foreigners" />

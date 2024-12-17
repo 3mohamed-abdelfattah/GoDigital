@@ -107,7 +107,7 @@ export const IntermediariesPage = () => {
             </section>
 
             {/* Article Slide Section */}
-            <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τη διαμεσολάβηση." />
+            <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τη διαμεσολάβηση." url="/blog/professional-liability-insurance-intermediaries" />
             {/* Get Quote Bars */}
             <GetQuote url="/get-a-quote-intermediaries" />
             <GetQuoteSideBT url="/get-a-quote-intermediaries" />

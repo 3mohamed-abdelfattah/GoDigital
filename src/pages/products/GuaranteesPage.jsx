@@ -128,7 +128,7 @@ export const GuaranteesPage = () => {
             </section>
 
             {/* Article Slide Section */}
-            <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τις εγγυητικές επιστολές." />
+            <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τις εγγυητικές επιστολές." url="/blog/guarantees" />
             {/* Get Quote Bars */}
             <GetQuote url="/get-a-quote-guarantee" />
             <GetQuoteSideBT url="/get-a-quote-guarantee" />

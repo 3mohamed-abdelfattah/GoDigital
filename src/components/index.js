@@ -1,5 +1,6 @@
 // Primary Bars 
 export * from './bars/Header'
+export * from './bars/QuoteHeader.jsx' // Header for Get a Quote Pages
 export * from './bars/GetQuote' // Get Quote bar for Mobile
 export * from './bars/GetQuoteSideBT' // Get Quote button for large Screen in products 
 // HomePage Components

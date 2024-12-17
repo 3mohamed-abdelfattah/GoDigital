@@ -143,7 +143,7 @@ export const TravelPage = () => {
             </section>
 
             {/* Article Slide Section */}
-            <ArticleSlider subTitle="Μάθε περισσότερα για την ταξιδιωτική ασφάλιση και τα ταξίδια" />
+            <ArticleSlider subTitle="Μάθε περισσότερα για την ταξιδιωτική ασφάλιση και τα ταξίδια" url="/blog/travel" />
             {/* Get Quote Bars */}
             <GetQuote url="/get-a-quote-travel" />
             <GetQuoteSideBT url="/get-a-quote-travel" />

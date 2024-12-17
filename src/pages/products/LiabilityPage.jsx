@@ -102,7 +102,7 @@ export const LiabilityPage = () => {
             </section>
 
             {/* Article Slide Section */}
-            <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τις μεταφορές." />
+            <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τις μεταφορές." url="/blog/road-carrier-professional-liability" />
             {/* Get Quote Bars */}
             <GetQuote url="/get-a-quote-liability" />
             <GetQuoteSideBT url="/get-a-quote-liability" />

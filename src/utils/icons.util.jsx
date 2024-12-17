@@ -156,13 +156,8 @@ export const PopUpPlaneIcon = () => (
 );
 
 export const ReloadIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="44" viewBox="0 0 43 44" fill="none">
-        <mask id="mask0_8_2503" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="43" height="44">
-            <path d="M1.25 42.3214V1.96423H41.6071V42.3214H1.25Z" fill="white" stroke="white" stroke-width="2.5" />
-        </mask>
-        <g mask="url(#mask0_8_2503)">
-            <path d="M35.2292 20.2299C36.502 24.9959 35.2688 30.2918 31.5299 34.0308C27.1065 38.4542 20.5043 39.3704 15.1783 36.7795M32.7925 15.0904L31.5299 13.8277C25.9509 8.24882 16.9057 8.24882 11.3268 13.8277C6.12405 19.0304 5.77322 27.2477 10.2743 32.857M32.7925 15.0904H25.2163M32.7925 15.0904V7.51428" stroke="#C3C3C3" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round" />
-        </g>
+    <svg width="32" height="32" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30.2292 15.2299C31.502 19.9959 30.2688 25.2918 26.5299 29.0308C22.1065 33.4542 15.5043 34.3704 10.1783 31.7795M27.7925 10.0904L26.5299 8.82773C20.9509 3.24882 11.9057 3.24882 6.32676 8.82773C1.12405 14.0304 0.773224 22.2477 5.27426 27.857M27.7925 10.0904H20.2163M27.7925 10.0904V2.51428" stroke="#C3C3C3" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
 );
 

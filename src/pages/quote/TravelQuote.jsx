@@ -114,7 +114,7 @@ export const TravelQuote = () => {
 
                         {/* Plane Icon with Animation */}
                         <span
-                            className="transition-transform duration-700 ease-in-out absolute"
+                            className="absolute transition_all"
                             style={{
                                 left: `calc(${currentStep * 23.5}%)`, // Adjusts plane's position dynamically based on the current step
                             }}

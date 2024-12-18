@@ -5,6 +5,11 @@ import * as Icons from "@/utils/icons.util";
 import Logo from "@/assets/images/logo.png";
 
 export const QuoteHeader = () => {
+
+    const handleRefresh = () => {
+        window.location.reload(); // reload the page 
+    };
+
     return (
         <header className="flex justify-between items-center mt-3 vsm:mt-9 mx-8 xl:mx-32">
             {/* Logo */}
@@ -12,7 +17,9 @@ export const QuoteHeader = () => {
 
             <section className="flex items-center gap-5">
                 {/* Hamburger Icon for Mobile */}
-                <Icons.ReloadIcon />
+                <span onClick={handleRefresh} className="cursor-pointer hover:animate-spin">
+                    <Icons.ReloadIcon />
+                </span>
 
                 {/* User Profile Icon */}
                 <Link to="/profile" className="flex justify-center items-center bg-[#1E3F76]/30 hover:bg-secondaryColor rounded-full w-10 h-10 cursor-pointer transition_all active:scale-125">

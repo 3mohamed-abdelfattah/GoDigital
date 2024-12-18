@@ -4,73 +4,17 @@ import { QuoteHeader } from "@/components";
 // Icons
 import * as Icons from "@/utils/icons.util";
 
-// Reusable Input Component with Dynamic Border
-const TravelInput = ({ placeholder, value, onChange, isInvalid, type = "text" }) => (
-    <input
-        type={type}
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-        className={`w-full max-w-80 vsm:max-w-96 sm:w-[400px] h-[75px] px-4 border rounded-[10px] text-[#C3C3C3] font-semibold focus:outline-none
-            ${isInvalid ? "border-red-500" : "border-gray-300"}`}
-    />
-);
-
-// Reusable Select Component for Dropdown
-const TravelSelect = ({ placeholder, value, onChange, options, isInvalid }) => (
-    <select
-        value={value}
-        onChange={onChange}
-        className={`w-full max-w-80 vsm:max-w-96 sm:w-[400px] h-[75px] px-4 border rounded-[10px] text-[#C3C3C3] font-semibold focus:outline-none
-            ${isInvalid ? "border-red-500" : "border-gray-300"}`}
-    >
-        <option value="" disabled>{placeholder}</option>
-        {options.map((option, idx) => (
-            <option key={idx} value={option}>{option}</option>
-        ))}
-    </select>
-);
-
-// Reusable Button Component
-const ActionButton = ({ text, iconPosition, onClick, isDisabled, isNext }) => (
-    <button
-        onClick={onClick}
-        disabled={isDisabled}
-        className={`group flex items-center justify-between px-5 sm:px-3 
-        ${isNext ? "sm:pl-16" : "sm:pr-14"} w-36 sm:w-[220px] h-12 sm:h-[59px] text-sm vsm:text-base sm:text-lg font-semibold 
-        border rounded-[27.5px] shadow-md transition-all
-        ${isDisabled ? "border-gray-300 text-gray-400" : "text-black"}`}
-    >
-        {iconPosition === "left" && (
-            <span
-                className={`flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 rounded-full transition-transform -rotate-90 group-hover:-rotate-[135deg] 
-                ${isDisabled ? "bg-gray-300" : "bg-black"}`} // Change background to black when not disabled
-            >
-                <Icons.QuoteArrowIcon />
-            </span>
-        )}
-        {text}
-        {iconPosition === "right" && (
-            <span className="flex justify-center items-center bg-secondaryColor w-8 h-8 sm:w-10 sm:h-10 rounded-full transition-transform group-hover:rotate-45">
-                <Icons.QuoteArrowIcon />
-            </span>
-        )}
-    </button>
-);
-
 export const TravelQuote = () => {
     const totalSteps = 4; // Total number of steps
     const [currentStep, setCurrentStep] = useState(0); // Current active step
+    const [isInvalid, setIsInvalid] = useState(false); // Track invalid inputs
+    const locations = ["New York", "Los Angeles", "Chicago", "London", "Tokyo"]; // Example locations
     const [userData, setUserData] = useState({
         step1: { departure: "", arrival: "" },
         step2: { startDate: "", endDate: "" },
         step3: { preference: "" },
         step4: { phone: "" },
     });
-
-    const [isInvalid, setIsInvalid] = useState(false); // Track invalid inputs
-
-    const locations = ["New York", "Los Angeles", "Chicago", "London", "Tokyo"]; // Example locations
 
     // Handle input change for specific fields in each step
     const handleInputChange = (step, field, value) => {
@@ -258,3 +202,58 @@ export const TravelQuote = () => {
         </main>
     );
 };
+
+// Reusable Input Component with Dynamic Border
+const TravelInput = ({ placeholder, value, onChange, isInvalid, type = "text" }) => (
+    <input
+        type={type}
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
+        className={`w-full max-w-80 vsm:max-w-96 sm:w-[400px] h-[75px] px-4 border rounded-[10px] text-[#C3C3C3] font-semibold focus:outline-none
+            ${isInvalid ? "border-red-500" : "border-gray-300"}`}
+    />
+);
+
+// Reusable Select Component for Dropdown
+const TravelSelect = ({ placeholder, value, onChange, options, isInvalid }) => (
+    <select
+        value={value}
+        onChange={onChange}
+        className={`w-full max-w-80 vsm:max-w-96 sm:w-[400px] h-[75px] px-4 border rounded-[10px] font-semibold focus:outline-none 
+            ${isInvalid ? "border-secondaryColor border-2" : "border-[#C3C3C3]"}
+            ${value ? "text-black" : "text-[#C3C3C3]"}`}
+    >
+        <option value="" disabled hidden>{placeholder}</option>
+        {options.map((option, idx) => (
+            <option key={idx} value={option} className="font-semibold">{option}</option>
+        ))}
+    </select>
+);
+
+// Reusable Button Component
+const ActionButton = ({ text, iconPosition, onClick, isDisabled, isNext }) => (
+    <button
+        onClick={onClick}
+        disabled={isDisabled}
+        className={`group flex items-center justify-between px-5 sm:px-3 
+        ${isNext ? "sm:pl-16" : "sm:pr-14"} w-36 sm:w-[220px] h-12 sm:h-[59px] text-sm vsm:text-base sm:text-lg font-semibold 
+        border rounded-[27.5px] shadow-md transition-all
+        ${isDisabled ? "border-gray-300 text-gray-400" : "text-black"}`}
+    >
+        {iconPosition === "left" && (
+            <span
+                className={`flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 rounded-full transition-transform -rotate-90 group-hover:-rotate-[135deg] 
+                ${isDisabled ? "bg-gray-300" : "bg-black"}`} // Change background to black when not disabled
+            >
+                <Icons.QuoteArrowIcon />
+            </span>
+        )}
+        {text}
+        {iconPosition === "right" && (
+            <span className="flex justify-center items-center bg-secondaryColor w-8 h-8 sm:w-10 sm:h-10 rounded-full transition-transform group-hover:rotate-45">
+                <Icons.QuoteArrowIcon />
+            </span>
+        )}
+    </button>
+);

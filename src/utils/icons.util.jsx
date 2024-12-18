@@ -156,8 +156,8 @@ export const PopUpPlaneIcon = () => (
 );
 
 export const ReloadIcon = () => (
-    <svg width="32" height="32" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M30.2292 15.2299C31.502 19.9959 30.2688 25.2918 26.5299 29.0308C22.1065 33.4542 15.5043 34.3704 10.1783 31.7795M27.7925 10.0904L26.5299 8.82773C20.9509 3.24882 11.9057 3.24882 6.32676 8.82773C1.12405 14.0304 0.773224 22.2477 5.27426 27.857M27.7925 10.0904H20.2163M27.7925 10.0904V2.51428" stroke="#C3C3C3" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round" />
+    <svg className="text-[#C3C3C3] hover:text-secondaryColor transition-all" width="32" height="32" viewBox="0 0 33 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30.2292 15.2299C31.502 19.9959 30.2688 25.2918 26.5299 29.0308C22.1065 33.4542 15.5043 34.3704 10.1783 31.7795M27.7925 10.0904L26.5299 8.82773C20.9509 3.24882 11.9057 3.24882 6.32676 8.82773C1.12405 14.0304 0.773224 22.2477 5.27426 27.857M27.7925 10.0904H20.2163M27.7925 10.0904V2.51428" stroke="currentColor" stroke-width="3.75" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
 );
 

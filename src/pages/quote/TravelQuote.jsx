@@ -211,7 +211,9 @@ const TravelInput = ({ placeholder, value, onChange, isInvalid, type = "text" })
         value={value}
         onChange={onChange}
         className={`w-full max-w-80 vsm:max-w-96 sm:w-[400px] h-[75px] px-4 border rounded-[10px] text-[#C3C3C3] font-semibold focus:outline-none
-            ${isInvalid ? "border-red-500" : "border-gray-300"}`}
+            ${isInvalid ? "border-secondaryColor border-2  animate-pulse" : "border-[#C3C3C3]"}
+            ${value ? "text-black border-black" : "text-[#C3C3C3]"}
+            `}
     />
 );
 
@@ -221,8 +223,8 @@ const TravelSelect = ({ placeholder, value, onChange, options, isInvalid }) => (
         value={value}
         onChange={onChange}
         className={`w-full max-w-80 vsm:max-w-96 sm:w-[400px] h-[75px] px-4 border rounded-[10px] font-semibold focus:outline-none 
-            ${isInvalid ? "border-secondaryColor border-2" : "border-[#C3C3C3]"}
-            ${value ? "text-black" : "text-[#C3C3C3]"}`}
+            ${isInvalid ? "border-secondaryColor border-2  animate-pulse" : "border-[#C3C3C3]"}
+            ${value ? "text-black border-black" : "text-[#C3C3C3]"}`}
     >
         <option value="" disabled hidden>{placeholder}</option>
         {options.map((option, idx) => (
@@ -239,7 +241,7 @@ const ActionButton = ({ text, iconPosition, onClick, isDisabled, isNext }) => (
         className={`group flex items-center justify-between px-5 sm:px-3 
         ${isNext ? "sm:pl-16" : "sm:pr-14"} w-36 sm:w-[220px] h-12 sm:h-[59px] text-sm vsm:text-base sm:text-lg font-semibold 
         border rounded-[27.5px] shadow-md transition-all
-        ${isDisabled ? "border-gray-300 text-gray-400" : "text-black"}`}
+        ${isDisabled ? "text-gray-400" : "text-black"}`}
     >
         {iconPosition === "left" && (
             <span

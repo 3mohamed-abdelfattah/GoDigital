@@ -34,7 +34,7 @@ export const ArticleSlider = ({
             </aside>
 
             {/* Slider Background*/}
-            <span className={`${backgroundStyle} absolute w-11/12 lg:w-3/5 h-[480px] sm:h-[600px] lg:h-[693px] -z-30`}></span>
+            <span className={`${backgroundStyle} absolute w-11/12 lg:w-3/5 h-[480px] mb-0 sm:mb-1 lg:mb-10 sm:h-[620px] lg:h-[693px] -z-30`}></span>
 
             {/* Dynamic Slider Component */}
             <ImageSlider slides={slidesData} direction={direction} />

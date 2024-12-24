@@ -6,7 +6,7 @@ import "@splidejs/react-splide/css";
 
 // For All Slides
 export const ImageSlider = ({ slides, direction = "ltr" }) => {
-    const sliderClass = direction === "rtl" ? "slider_container rtl" : "slider_container";
+    const sliderClass = direction === "rtl" ? "slider_container rtl" : "slider_container ltr";
 
     return (
         <Splide className={sliderClass}
@@ -44,8 +44,7 @@ export const ImageSlider = ({ slides, direction = "ltr" }) => {
                         Read More
                     </Link>
                 </SplideSlider>
-            ))
-            }
+            ))}
         </Splide>
-    )
-}
+    );
+};

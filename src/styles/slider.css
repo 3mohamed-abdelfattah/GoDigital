@@ -11,6 +11,20 @@
   }
 }
 
+/* Center the pagination dots and apply the correct margin */
+.splide__pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.ltr .splide__pagination {
+  margin-left: 150px;
+}
+
+.rtl .splide__pagination {
+  margin-right: 150px;
+}
+
 .splide__pagination__page {
   width: 12px;
   height: 12px;
@@ -19,8 +33,8 @@
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
-    margin: 10px;
-      /* Add margin-left to pagination dots */
+  margin: 0 8px;
+  /* Center the dots horizontally with margin */
 }
 
 .splide__pagination__page.is-active {

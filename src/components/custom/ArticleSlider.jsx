@@ -16,7 +16,7 @@ export const ArticleSlider = ({
     direction
 }) => {
     return (
-        <section className={`${directionStyle} flex flex-col justify-end lg:justify-center gap-10 items-center my-8 sm:my-16 lg:my-48 overflow-hidden`}>
+        <section className={`${directionStyle} flex flex-col justify-end lg:justify-center gap-10 items-center my-8 sm:my-16 lg:my-40 overflow-hidden`}>
             <aside className="flex flex-col w-3/4 lg:w-[311px] mb-12 lg:mb-0">
                 {/* Titles */}
                 <h1 data-aos="zoom-in" className="font-bold text-3xl sm:text-[40px]">{title}</h1>

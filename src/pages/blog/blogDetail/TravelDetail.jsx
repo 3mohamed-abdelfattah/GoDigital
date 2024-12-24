@@ -65,7 +65,7 @@ export const TravelDetail = () => {
 
             {/* Footer Section */}
             <section
-                className="flex flex-col-reverse md:flex-row justify-center md:justify-evenly items-center bg-secondaryColor text-center md:text-left rounded-3xl p-5 mx-6 lg:mx-20 md:rounded-[58px] text-primaryColor py-6 md:py-12 xl:h-[590px]"
+                className="flex flex-col-reverse md:flex-row justify-center md:justify-evenly items-center bg-secondaryColor text-center md:text-left rounded-3xl p-5 m-6 lg:mx-20 md:rounded-[58px] text-primaryColor py-6 md:py-12 xl:h-[590px]"
                 style={{ boxShadow: "0 10px 10px rgba(0, 0, 0, 0.1)" }}
             >
 

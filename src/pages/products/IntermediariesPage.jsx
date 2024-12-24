@@ -57,7 +57,7 @@ export const IntermediariesPage = () => {
             <CoveragesSection title="Οι καλύψεις μας" description="Οι καλύψεις που προσφέρει το συμβόλαιο Ασφάλισης Επαγγελματικής Ευθύνης Ασφαλιστικών Διαμεσολαβητών της GoDigital, εξασφαλίζουν τη μέγιστη προστασία για να εξασκείτε το επάγγελμα σας με τον καλύτερο τρόπο. Πάντα να βεβαιώνεστε ποιες καλύψεις περιλαμβάνονται στο συμβόλαιο σας." data={slidesData} />
 
             {/* Services Section */}
-            <section className="max-w-[1754px] bg-secondaryBgColor rounded-3xl lg:rounded-[58px] text-center mt-10 md:mt-[139px] mx-7 lg:mx-20 p-5 vsm:p-8 lg:p-12">
+            <section className="max-w-[1754px] bg-secondaryBgColor rounded-3xl lg:rounded-[58px] text-center mt-10 mx-7 lg:mx-20 p-5 vsm:p-8 lg:p-12">
                 {/* Head Titles */}
                 <h1 data-aos="zoom-in" className="font-extrabold text-3xl sm:text-[40px]">Υπηρεσίες</h1>
                 <h2 data-aos="zoom-in" className="max-w-[911px] mt-3 font-medium text-xs tiny:text-lg sm:text-[22px] sm:leading-[30.05px] mx-auto">Στην GoDigital φροντίζουμε να σας προσφέρουμε κορυφαίες υπηρεσίες που να κάνουν την εμπειρία σας μοναδική.</h2>

@@ -36,11 +36,8 @@ export const CoveragesSection = ({ title, description, data }) => {
         }
     };
 
-    // Determine the number of slides per page based on data length
-    const slidesPerPage = data.length > 4 ? 4 : data.length;
+    const slidesPerPage = data.length > 4 ? 4 : data.length; // Determine the number of slides per page based on data length
     const gapValue = data.length === 2 ? '-42%' : '0px'; // Set gap to 20px if there are only 2 slides
-
-    console.log(slidesPerPage, gapValue);
 
     return (
         <main className="flex flex-col justify-center items-center pt-16 w-full">

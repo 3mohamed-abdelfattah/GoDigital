@@ -36,6 +36,12 @@ export const CoveragesSection = ({ title, description, data }) => {
         }
     };
 
+    // Determine the number of slides per page based on data length
+    const slidesPerPage = data.length > 4 ? 4 : data.length;
+    const gapValue = data.length === 2 ? '-42%' : '0px'; // Set gap to 20px if there are only 2 slides
+
+    console.log(slidesPerPage, gapValue);
+
     return (
         <main className="flex flex-col justify-center items-center pt-16 w-full">
             <h1 data-aos="zoom-in" className="text-3xl md:text-4xl font-extrabold text-primaryBgColor text-center">
@@ -50,14 +56,18 @@ export const CoveragesSection = ({ title, description, data }) => {
                     options={{
                         focus: "center",
                         rewind: true,
+                        drag: false,
                         snap: true,
                         arrows: false,
                         pagination: true,
-                        perPage: 4,
+                        perPage: slidesPerPage,
                         height: "450px",
-                        gap: "0px", // Remove gaps between slides
+                        gap: gapValue, // Remove gaps between slides
                         breakpoints: {
-                            1500: { perPage: 3 },
+                            1500: {
+                                perPage: data.length == 2 ? 2 : 3,
+                                gap: "0px"
+                            },
                             1024: { perPage: 2 },
                             680: { perPage: 1, height: "430px", arrows: true },
                             460: { height: "380px" },

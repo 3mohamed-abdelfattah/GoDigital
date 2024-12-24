@@ -1,5 +1,5 @@
-/* Edit Spilder Library Proparties */
-/* important for override library defult style */
+/* Edit Splide Library Properties */
+/* important for override library default style */
 .slider_container {
   margin: 20px 0 !important;
 }
@@ -8,7 +8,6 @@
 @media (max-width: 1024px) {
   .slider_container {
     margin: 5px 0 !important;
-    /* less the margin property */
   }
 }
 
@@ -20,8 +19,15 @@
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
+    margin: 10px;
+      /* Add margin-left to pagination dots */
 }
 
 .splide__pagination__page.is-active {
   background-color: #f97316 !important;
+}
+
+/* Apply different color for rtl direction */
+.slider_container.rtl .splide__pagination__page.is-active {
+  background-color: #333132 !important;
 }

@@ -78,7 +78,7 @@ export const CoveragesSection = ({ title, description, data }) => {
                                 onClick={() => handleToggle(index)} // Toggle on click
                                 onMouseEnter={() => handleMouseEnter(index)} // Show on hover for large screens
                                 onMouseLeave={() => handleMouseLeave(index)} // Hide on hover out for large screens
-                                className={`relative flex justify-center w-80 h-72 vsm:w-[350px] mt-5 vsm:h-[340px] sm:w-[381px] sm:h-[373px] bg-primaryBgColor rounded-b-[30px] rounded-t-[20px] mx-2 ${slide.description ? 'cursor-pointer' : ''}`} // Show cursor-pointer only if description exists
+                                className={`relative flex justify-center w-80 h-72 vsm:w-[350px] mt-5 vsm:h-[340px] sm:w-[381px] sm:h-[373px] bg-primaryBgColor rounded-b-[22px] rounded-t-[20px] mx-2 ${slide.description ? 'cursor-pointer' : ''}`} // Show cursor-pointer only if description exists
                             >
                                 <span className="mt-16" data-aos="zoom-in">
                                     <Icons.MedicalIcon />

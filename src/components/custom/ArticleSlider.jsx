@@ -8,7 +8,7 @@ import ArticleImg3 from "@/assets/images/forHome/article3.jpeg"
 
 export const ArticleSlider = ({
     title = 'Άρθρα',
-    subTitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
+    subTitle = 'Χρήσιμα άρθρα για την ασφάλιση που σας βοηθούν να πάρετε τις σωστές αποφάσεις!',
     url,
     directionStyle = 'lg:flex-row lg:pl-32',
     buttonStyle = 'bg-secondaryColor hover:bg-primaryBgColor',
@@ -16,7 +16,7 @@ export const ArticleSlider = ({
     direction
 }) => {
     return (
-        <section className={`${directionStyle} flex flex-col justify-end lg:justify-center gap-10 items-center my-8 sm:my-16 lg:my-48 overflow-hidden`}>
+        <section className={`${directionStyle} flex flex-col justify-end lg:justify-center gap-10 items-center my-8 sm:my-16 lg:my-40 overflow-hidden`}>
             <aside className="flex flex-col w-3/4 lg:w-[311px] mb-12 lg:mb-0">
                 {/* Titles */}
                 <h1 data-aos="zoom-in" className="font-bold text-3xl sm:text-[40px]">{title}</h1>
@@ -34,7 +34,7 @@ export const ArticleSlider = ({
             </aside>
 
             {/* Slider Background*/}
-            <span className={`${backgroundStyle} absolute w-11/12 lg:w-3/5 h-[480px] sm:h-[600px] lg:h-[693px] -z-30`}></span>
+            <span className={`${backgroundStyle} absolute w-11/12 lg:w-3/5 h-[480px] mb-0 sm:mb-1 lg:mb-10 sm:h-[620px] lg:h-[693px] -z-30`}></span>
 
             {/* Dynamic Slider Component */}
             <ImageSlider slides={slidesData} direction={direction} />

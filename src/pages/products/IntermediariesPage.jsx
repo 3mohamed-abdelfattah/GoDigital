@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 // Components
 import { Header, HeroProductsSection, CircleDashed, CoveragesSection, CircleGray, ArticleSlider, SuccessRectangle, GetQuote, GetQuoteSideBT } from "@/components"
 // Icons
@@ -20,7 +21,7 @@ export const IntermediariesPage = () => {
         <>
             <Header />
 
-            <HeroProductsSection headTitle="Ασφάλιση Επαγγελματικής Ευθύνης Ασφαλιστικών Διαμεσολαβητών!" Subtitle="Εξασφαλίστε την καριέρα σας ότι κι αν συμβεί … ψηφιακά και απλά!">
+            <HeroProductsSection headTitle="Ασφάλιση Επαγγελματικής Ευθύνης Ασφαλιστικών Διαμεσολαβητών!" Subtitle="Εξασφαλίστε την καριέρα σας ότι κι αν συμβεί … ψηφιακά και απλά!" url="/get-a-quote-intermediaries">
                 <h3 data-aos="fade-right" className="text-sm sm:text-base lg:text-[22px] font-bold">Φυσικό ή Νομικό πρόσωπο; Επέλεξε και πάρε προσφορά!</h3>
                 {/* Input section*/}
                 <input data-aos="fade-right" placeholder="Ταυτότητα" className="w-full max-w-[450px] xl:max-w-[680px] appearance-none h-14 md:h-[74px] bg-white border border-gray-300 text-sm vsm:text-base font-bold rounded-[10px] text-[#7D7D7D] py-2 px-4 pr-10 shadow focus:outline-none focus:ring-2 focus:ring-orange-400" />
@@ -56,7 +57,7 @@ export const IntermediariesPage = () => {
             <CoveragesSection title="Οι καλύψεις μας" description="Οι καλύψεις που προσφέρει το συμβόλαιο Ασφάλισης Επαγγελματικής Ευθύνης Ασφαλιστικών Διαμεσολαβητών της GoDigital, εξασφαλίζουν τη μέγιστη προστασία για να εξασκείτε το επάγγελμα σας με τον καλύτερο τρόπο. Πάντα να βεβαιώνεστε ποιες καλύψεις περιλαμβάνονται στο συμβόλαιο σας." data={slidesData} />
 
             {/* Services Section */}
-            <section className="max-w-[1754px] bg-secondaryBgColor rounded-3xl lg:rounded-[58px] text-center mt-10 md:mt-[139px] mx-7 lg:mx-20 p-5 vsm:p-8 lg:p-12">
+            <section className="max-w-[1754px] bg-secondaryBgColor rounded-3xl lg:rounded-[58px] text-center mt-10 mx-7 lg:mx-20 p-5 vsm:p-8 lg:p-12">
                 {/* Head Titles */}
                 <h1 data-aos="zoom-in" className="font-extrabold text-3xl sm:text-[40px]">Υπηρεσίες</h1>
                 <h2 data-aos="zoom-in" className="max-w-[911px] mt-3 font-medium text-xs tiny:text-lg sm:text-[22px] sm:leading-[30.05px] mx-auto">Στην GoDigital φροντίζουμε να σας προσφέρουμε κορυφαίες υπηρεσίες που να κάνουν την εμπειρία σας μοναδική.</h2>
@@ -76,13 +77,15 @@ export const IntermediariesPage = () => {
                     </CircleGray>
                 </article>
                 {/* Quote Button */}
-                <button
-                    className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 sm:mt-16 hover:bg-secondaryColor hover:text-primaryColor transition_all active:scale-110"
-                    style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
-                    data-aos="zoom-in"
-                >
-                    Get Quote
-                </button>
+                <Link to="/get-a-quote-intermediaries">
+                    <button
+                        className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 sm:mt-16 hover:bg-secondaryColor hover:text-primaryColor transition_all active:scale-110"
+                        style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
+                        data-aos="zoom-in"
+                    >
+                        Get Quote
+                    </button>
+                </Link>
             </section>
 
             {/* Why GoDigital Section*/}
@@ -104,10 +107,10 @@ export const IntermediariesPage = () => {
             </section>
 
             {/* Article Slide Section */}
-            <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τη διαμεσολάβηση." />
+            <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τη διαμεσολάβηση." url="/blog/professional-liability-insurance-intermediaries" />
             {/* Get Quote Bars */}
-            <GetQuote />
-            <GetQuoteSideBT />
+            <GetQuote url="/get-a-quote-intermediaries" />
+            <GetQuoteSideBT url="/get-a-quote-intermediaries" />
         </>
     )
 }

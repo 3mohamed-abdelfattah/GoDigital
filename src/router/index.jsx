@@ -1,6 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Pages
-import { HomePage, ForeignersPage, GuaranteesPage, IntermediariesPage, LiabilityPage, TravelPage, BlogPage, BlogDetails, Profile, ProfileContracts } from "@/pages";
+import {
+    HomePage, ForeignersPage, GuaranteesPage, IntermediariesPage, LiabilityPage, TravelPage,
+    BlogPage, TravelDetail, GuaranteesDetail, LiabilityDetail, ForeignersDetail, IntermediariesDetail,
+    TravelQuote, GuaranteeQuote, LiabilityQuote, IntermediariesQuote, ForeignersQuote, Profile, ProfileContracts
+} from "@/pages";
 import { Header } from "../components/bars/Header";
 
 const router = createBrowserRouter([
@@ -8,6 +12,8 @@ const router = createBrowserRouter([
         path: "/",
         element: <HomePage />,
     },
+
+    // Product Routes
     {
         path: "/products/travel",
         element: <TravelPage />,
@@ -28,14 +34,56 @@ const router = createBrowserRouter([
         path: "/products/professional-liability-insurance-intermediaries",
         element: <IntermediariesPage />,
     },
+
+    // Blog Routes
     {
         path: "/blog",
         element: <BlogPage />,
     },
     {
-        path: "/blog/:id",
-        element: <BlogDetails />,
+        path: "/blog/travel",
+        element: <TravelDetail />,
     },
+    {
+        path: "/blog/guarantees",
+        element: <GuaranteesDetail />,
+    },
+    {
+        path: "/blog/road-carrier-professional-liability",
+        element: <LiabilityDetail />,
+    },
+    {
+        path: "/blog/medical-insurance-foreigners",
+        element: <ForeignersDetail />,
+    },
+    {
+        path: "/blog/professional-liability-insurance-intermediaries",
+        element: <IntermediariesDetail />,
+    },
+
+    // Quote Routes
+    {
+        path: "/get-a-quote-travel",
+        element: <TravelQuote />,
+    },
+    {
+        path: "/get-a-quote-guarantee",
+        element: <GuaranteeQuote />,
+    },
+    {
+        path: "/get-a-quote-liability",
+        element: <LiabilityQuote />,
+    },
+    {
+        path: "/get-a-quote-intermediaries",
+        element: <IntermediariesQuote />,
+    },
+    {
+        path: "/get-a-quote-foreigners",
+        element: <ForeignersQuote />,
+    },
+
+    // Profile Routes
     {
         path: "/profile",
         element: <Profile />,
@@ -44,6 +92,8 @@ const router = createBrowserRouter([
         path: "/profile-contract",
         element: <ProfileContracts />,
     },
+
+    // Route for not existing urls
     {
         path: "/*",
         element: <div>

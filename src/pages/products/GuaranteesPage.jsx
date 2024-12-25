@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 // Components
 import { Header, HeroProductsSection, CircleDashed, CoveragesSection, CircleGray, ArticleSlider, SuccessRectangle, WarrantiesSection, GetQuote, GetQuoteSideBT } from "@/components"
 // Icons
@@ -29,7 +30,7 @@ export const GuaranteesPage = () => {
         <>
             <Header />
 
-            <HeroProductsSection headTitle="Ασφάλιση Εγγυήσεων … ψηφιακά απλά!" Subtitle="Εξασφαλίστε την εγγυητική επιστολή που χρειάζεστε χωρίς δέσμευση κεφαλαίων!">
+            <HeroProductsSection headTitle="Ασφάλιση Εγγυήσεων … ψηφιακά απλά!" Subtitle="Εξασφαλίστε την εγγυητική επιστολή που χρειάζεστε χωρίς δέσμευση κεφαλαίων!" url="/get-a-quote-guarantee">
                 <h3 data-aos="fade-right" className="text-sm sm:text-base lg:text-[22px] font-bold">Διάλεξε τον τύπο εγγύησης για να ξεκινήσεις τη διαδικασία προσφοράς!</h3>
                 {/* Select Input section*/}
                 <div data-aos="fade-right" className="relative w-full max-w-[450px] xl:max-w-[680px]">
@@ -77,7 +78,7 @@ export const GuaranteesPage = () => {
             <CoveragesSection title="Πλεονεκτήματα Εγγυητικών Επιστολών" description="Η Ασφάλιση Εγγυήσεων προσφέρει πολλαπλά πλεονεκτήματα σε επιχειρήσεις και οργανισμούς που συμμετέχουν σε διαγωνισμούς και αναλαμβάνουν έργα." data={slidesData} />
 
             {/* Services Section */}
-            <section className="max-w-[1754px] bg-secondaryBgColor rounded-3xl lg:rounded-[58px] text-center mt-10 md:mt-[139px] mx-7 lg:mx-20 p-5 vsm:p-8 lg:p-12">
+            <section className="max-w-[1754px] bg-secondaryBgColor rounded-3xl lg:rounded-[58px] text-center mt-10 mx-7 lg:mx-20 p-5 vsm:p-8 lg:p-12">
                 {/* Head Titles */}
                 <h1 data-aos="zoom-in" className="font-extrabold text-3xl sm:text-[40px]">Υπηρεσίες</h1>
                 <h2 data-aos="zoom-in" className="max-w-[911px] mt-3 font-medium text-xs tiny:text-lg sm:text-[22px] sm:leading-[30.05px] mx-auto">Στην GoDigital φροντίζουμε να σας προσφέρουμε κορυφαίες υπηρεσίες που να κάνουν την εμπειρία σας μοναδική.</h2>
@@ -97,13 +98,15 @@ export const GuaranteesPage = () => {
                     </CircleGray>
                 </article>
                 {/* Quote Button */}
-                <button
-                    className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 sm:mt-16 hover:bg-secondaryColor hover:text-primaryColor transition_all active:scale-110"
-                    style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
-                    data-aos="zoom-in"
-                >
-                    Get Quote
-                </button>
+                <Link to="/get-a-quote-guarantee">
+                    <button
+                        className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-base sm:text-lg font-bold mt-8 sm:mt-16 hover:bg-secondaryColor hover:text-primaryColor transition_all active:scale-110"
+                        style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
+                        data-aos="zoom-in"
+                    >
+                        Get Quote
+                    </button>
+                </Link>
             </section>
 
             {/* Why GoDigital Section*/}
@@ -125,10 +128,10 @@ export const GuaranteesPage = () => {
             </section>
 
             {/* Article Slide Section */}
-            <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τις εγγυητικές επιστολές." />
+            <ArticleSlider subTitle="Μάθε περισσότερα για την ασφάλιση και τις εγγυητικές επιστολές." url="/blog/guarantees" />
             {/* Get Quote Bars */}
-            <GetQuote />
-            <GetQuoteSideBT />
+            <GetQuote url="/get-a-quote-guarantee" />
+            <GetQuoteSideBT url="/get-a-quote-guarantee" />
         </>
     )
 }

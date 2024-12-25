@@ -5,12 +5,8 @@ import { Header } from "@/components";
 import * as Icons from "@/utils/icons.util"
 // Images
 import Symbol from "@/assets/images/icon.png"
-import ArticleImg1 from "@/assets/images/forHome/article1.jpeg"
-import ArticleImg2 from "@/assets/images/forHome/article2.jpeg"
-import ArticleImg3 from "@/assets/images/forHome/article3.jpeg"
 
-export const BlogDetails = () => {
-    const { id } = useParams(); // to get id
+export const TravelDetail = () => {
     return (
         <>
             <Header />
@@ -36,7 +32,6 @@ export const BlogDetails = () => {
                     </span>
                 </span>
             </section>
-
 
             {/* Articles Details Section */}
             <section className="flex flex-wrap justify-center gap-5 m-7">
@@ -68,9 +63,9 @@ export const BlogDetails = () => {
                 ))}
             </section>
 
-            {/* Travel Insurance Section */}
+            {/* Footer Section */}
             <section
-                className="flex flex-col-reverse md:flex-row justify-center md:justify-evenly items-center bg-secondaryColor text-center md:text-left rounded-3xl p-5 mx-6 lg:mx-20 md:rounded-[58px] text-primaryColor py-6 md:py-12 xl:h-[590px]"
+                className="flex flex-col-reverse md:flex-row justify-center md:justify-evenly items-center bg-secondaryColor text-center md:text-left rounded-3xl p-5 m-6 lg:mx-20 md:rounded-[58px] text-primaryColor py-6 md:py-12 xl:h-[590px]"
                 style={{ boxShadow: "0 10px 10px rgba(0, 0, 0, 0.1)" }}
             >
 
@@ -91,22 +86,24 @@ export const BlogDetails = () => {
 
                         {/* Quote Button */}
                         <span className="flex gap-5">
-                            <button
-                                data-aos="fade-right"
-                                className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-sm vsm:text-base sm:text-lg font-bold hover:bg-primaryColor hover:text-secondaryColor transition_all active:scale-110"
-                                style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
-                            >
-                                Get Quote
-                            </button>
+                            <Link to="/get-a-quote-travel">
+                                <button
+                                    className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-sm vsm:text-base sm:text-lg font-bold hover:bg-primaryColor hover:text-secondaryColor transition_all active:scale-110"
+                                    style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
+                                >
+                                    Get Quote
+                                </button>
+                            </Link>
 
                             {/* More Info Button */}
-                            <button
-                                data-aos="fade-right"
-                                className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-sm vsm:text-base sm:text-lg font-bold hover:bg-primaryColor hover:text-secondaryColor transition_all active:scale-110"
-                                style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
-                            >
-                                More Info
-                            </button>
+                            <Link to="/products/travel">
+                                <button
+                                    className="w-28 h-12 sm:w-[213px] sm:h-[65px] rounded-[10px] bg-primaryBgColor text-primaryColor text-xs tiny:text-sm vsm:text-base sm:text-lg font-bold hover:bg-primaryColor hover:text-secondaryColor transition_all active:scale-110"
+                                    style={{ boxShadow: "0px 4px 4px 0px #00000026" }}
+                                >
+                                    More Info
+                                </button>
+                            </Link>
                         </span>
                     </aside>
                 </aside>
@@ -124,44 +121,23 @@ export const BlogDetails = () => {
 const slidesData = [
     {
         id: 1,
-        imgSrc: ArticleImg1,
+        imgSrc: "https://img.freepik.com/free-photo/travel-concept-with-lugagge-hat_23-2149030570.jpg?uid=R139510399&ga=GA1.1.1875629655.1732177190&semt=ais_tags_boosted",
         title: "Lorem ipsum dolor sit amet",
         subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
         readMoreUrl: "/details/1",
     },
     {
         id: 2,
-        imgSrc: ArticleImg2,
-        title: "Lorem ipsum dolor sit amet",
+        imgSrc: "https://img.freepik.com/free-photo/female-travelers-waving-cars-road_1150-7424.jpg?t=st=1734389044~exp=1734392644~hmac=e4d3e4b106f21e49d6795d9b333c19f7f272d60ee1e534d5a987e43971fc05c0&w=1060",
+        title: "test 1",
         subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
         readMoreUrl: "/details/2",
     },
     {
         id: 3,
-        imgSrc: ArticleImg3,
+        imgSrc: "https://img.freepik.com/free-photo/stylish-woman-with-hat-checking-local-map_23-2148597695.jpg?uid=R139510399&ga=GA1.1.1875629655.1732177190&semt=ais_tags_boosted",
         title: "Lorem ipsum dolor sit amet",
         subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
         readMoreUrl: "/details/3",
-    },
-    {
-        id: 4,
-        imgSrc: ArticleImg1,
-        title: "Lorem ipsum dolor sit amet",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        readMoreUrl: "/details/4",
-    },
-    {
-        id: 5,
-        imgSrc: ArticleImg2,
-        title: "Lorem ipsum dolor sit amet",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        readMoreUrl: "/details/5",
-    },
-    {
-        id: 6,
-        imgSrc: ArticleImg3,
-        title: "Lorem ipsum dolor sit amet",
-        subTitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        readMoreUrl: "/details/6",
     },
 ];

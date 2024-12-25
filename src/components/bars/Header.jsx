@@ -9,7 +9,6 @@ import Logo from "@/assets/images/logo.png";
 const routes = {
     "Αρχική": "/",
     "Προϊόντα": "/products",
-    "Σχετικά με εμάς": "/about",
     "Blog": "/blog",
     "Επικοινωνία": "/contact",
 };

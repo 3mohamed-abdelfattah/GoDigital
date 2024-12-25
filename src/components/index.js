@@ -1,12 +1,12 @@
 // Primary Bars 
 export * from './bars/Header'
+export * from './bars/QuoteHeader.jsx' // Header for Get a Quote Pages
 export * from './bars/GetQuote' // Get Quote bar for Mobile
 export * from './bars/GetQuoteSideBT' // Get Quote button for large Screen in products 
 // HomePage Components
 export * from './forHome/HeroSection' // Hero Section in Home Page
 export * from './forHome/HowWorksSection'
 export * from './forHome/WhyDigitalSection'
-export * from './forHome/ServicesSection'
 // BlogPage Components
 export * from './forBlog/HeroBlogSection' // Hero Section in Blog Page
 export * from './forBlog/SlidesSection'  // All Slides in Blog Page
@@ -22,3 +22,4 @@ export * from './custom/SuccessRectangle' // A square with a check mark inside i
 export * from './custom/ArticleSlider' // Full Article Section ( Slider and side title section)
 export * from './custom/ImageSlider' // Splide library options and all slides component
 export * from './custom/SplideSlider' //  For Each image in Slider
+export * from './custom/GetQuotePopup.jsx' //  Pop up Quote 

@@ -3,17 +3,25 @@ import { Fragment, useState } from "react";
 import { QuoteHeader } from "@/components";
 // Icons
 import * as Icons from "@/utils/icons.util";
+import { Economy } from "../../components/forGetQuote/Economy";
 
 export const TravelQuote = () => {
-    const totalSteps = 4; // Total number of steps
+    const totalSteps = 5; // Total number of steps (including price selection as the final step)
     const [currentStep, setCurrentStep] = useState(0); // Current active step
     const [isInvalid, setIsInvalid] = useState(false); // Track invalid inputs
+    const [showEconomy, setShowEconomy] = useState({
+        item1: false,
+        item2: false,
+        item3: false,
+        item4: false,
+    });
     const locations = ["New York", "Los Angeles", "Chicago", "London", "Tokyo"]; // Example locations
     const [userData, setUserData] = useState({
         step1: { departure: "", arrival: "" },
         step2: { startDate: "", endDate: "" },
         step3: { preference: "" },
         step4: { phone: "" },
+        step5: { priceOption: "" }, // Add new step data for price selection
     });
 
     // Handle input change for specific fields in each step
@@ -59,11 +67,11 @@ export const TravelQuote = () => {
             <QuoteHeader />
 
             {/* Progress Bar */}
-            <section className="border-t-2 mx-5 md:mx-0 my-2 flex flex-col justify-center items-center">
+            <section className="Inter_font border-t-2 mx-5 md:mx-0 my-2 flex flex-col justify-center items-center">
                 <div className="flex flex-col justify-center items-center my-10">
                     <div className="flex items-center gap-3 relative w-full">
                         {/* Progress Bar Steps */}
-                        {Array.from({ length: totalSteps }).map((_, index) => (
+                        {Array.from({ length: totalSteps - 1 }).map((_, index) => (
                             <div
                                 key={index}
                                 className={`w-14 vsm:w-20 sm:w-32 md:w-[170px] lg:w-[214px] h-[15px] rounded-[5px]
@@ -73,7 +81,7 @@ export const TravelQuote = () => {
                         ))}
                         {/* Plane Icon with Animation */}
                         <span
-                            className="absolute transition_all"
+                            className={`${currentStep < 4 ? 'absolute' : ''} transition_all`}
                             style={{
                                 left: `calc(${currentStep * 23.5}%)`, // Adjusts plane's position dynamically based on the current step
                             }}
@@ -168,6 +176,18 @@ export const TravelQuote = () => {
                             />
                         </div>
                     )}
+
+                    {/* Step 5: Price Selection */}
+                    {currentStep === 4 && (
+                        <div className="w-[708px] bg-[#FDE5DE] rounded-[15px]">
+
+                            <Economy id="item1" show={showEconomy.item1} setShow={setShowEconomy} />
+                            <Economy id="item2" show={showEconomy.item2} setShow={setShowEconomy} background="#FDE5DE" />
+                            <Economy id="item3" show={showEconomy.item3} setShow={setShowEconomy} />
+                            <Economy id="item4" show={showEconomy.item4} setShow={setShowEconomy} background="#FDE5DE" />
+
+                        </div>
+                    )}
                 </div>
 
                 {/* Action Buttons */}
@@ -198,8 +218,8 @@ export const TravelQuote = () => {
                         />
                     )}
                 </div>
-            </section>
-        </main>
+            </section >
+        </main >
     );
 };
 
@@ -210,7 +230,7 @@ const TravelInput = ({ placeholder, value, onChange, isInvalid, type = "text" })
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className={`w-full max-w-80 vsm:max-w-96 sm:w-[400px] h-[75px] px-4 border rounded-[10px] text-[#C3C3C3] font-semibold focus:outline-none
+        className={`w-full max-w-80 vsm:max-w-96 sm:w-[400px] h-[75px] px-4 border rounded-[10px] text-[#C3C3C3] font-medium focus:outline-none
             ${isInvalid ? "border-secondaryColor border-2  animate-pulse" : "border-[#C3C3C3]"}
             ${value ? "text-black border-black" : "text-[#C3C3C3]"}
             `}
@@ -222,13 +242,13 @@ const TravelSelect = ({ placeholder, value, onChange, options, isInvalid }) => (
     <select
         value={value}
         onChange={onChange}
-        className={`w-full max-w-80 vsm:max-w-96 sm:w-[400px] h-[75px] px-4 border rounded-[10px] font-semibold focus:outline-none 
+        className={`w-full max-w-80 vsm:max-w-96 sm:w-[400px] h-[75px] px-4 border rounded-[10px] font-medium focus:outline-none 
             ${isInvalid ? "border-secondaryColor border-2  animate-pulse" : "border-[#C3C3C3]"}
             ${value ? "text-black border-black" : "text-[#C3C3C3]"}`}
     >
         <option value="" disabled hidden>{placeholder}</option>
         {options.map((option, idx) => (
-            <option key={idx} value={option} className="font-semibold">{option}</option>
+            <option key={idx} value={option} className="font-medium">{option}</option>
         ))}
     </select>
 );
@@ -239,7 +259,7 @@ const ActionButton = ({ text, iconPosition, onClick, isDisabled, isNext }) => (
         onClick={onClick}
         disabled={isDisabled}
         className={`group flex items-center justify-between px-5 sm:px-3 
-        ${isNext ? "sm:pl-16" : "sm:pr-14"} w-36 sm:w-[220px] h-12 sm:h-[59px] text-sm vsm:text-base sm:text-lg font-semibold 
+        ${isNext ? "sm:pl-16" : "sm:pr-14"} w-36 sm:w-[220px] h-12 sm:h-[59px] text-sm vsm:text-base sm:text-lg font-medium 
         border rounded-[27.5px] shadow-md transition-all
         ${isDisabled ? "text-gray-400" : "text-black"}`}
     >

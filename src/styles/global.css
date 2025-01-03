@@ -1,5 +1,6 @@
 /* Manrope Font */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -21,6 +22,9 @@ html {
   scroll-behavior: smooth;
 }
 
+.Inter_font {
+  font-family: "Inter", sans-serif;
+}
 /* Hide Scroll Bar */
 ::-webkit-scrollbar {
   width: 0px;

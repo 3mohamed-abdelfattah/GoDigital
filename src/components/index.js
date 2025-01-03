@@ -14,6 +14,9 @@ export * from './forBlog/SlidesSection'  // All Slides in Blog Page
 export * from './forProducts/HeroProductsSection'  // Hero Section for All Products Pages
 export * from './forProducts/WarrantiesSection'  // GoDigital offers the following types of Warranties Section
 export * from './forProducts/CoveragesSection'  // GoDigital Our coverages Section
+// All Get Quotes Page Components
+export * from './forGetQuote/Economy.jsx'  // Economy Section in Get Quote Page
+export * from './forGetQuote/Model.jsx'  // Modal for displaying detailed information in Get Quote Page
 // Custom Components
 export * from './custom/PlaneLabel' // Oval shape with airplane logo inside and text
 export * from './custom/CircleDashed' // A circle with a logo inside and lines between it

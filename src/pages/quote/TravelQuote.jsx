@@ -1,9 +1,8 @@
 import { Fragment, useState } from "react";
 // Components
-import { QuoteHeader } from "@/components";
+import { QuoteHeader, Economy } from "@/components";
 // Icons
 import * as Icons from "@/utils/icons.util";
-import { Economy } from "../../components/forGetQuote/Economy";
 
 export const TravelQuote = () => {
     const totalSteps = 5; // Total number of steps (including price selection as the final step)
@@ -92,7 +91,7 @@ export const TravelQuote = () => {
                 </div>
 
                 {/* Step Forms */}
-                <div className="my-14 flex flex-wrap justify-center items-center gap-5">
+                <div className={`${currentStep == 4 ? "my-0" : "my-14"} flex flex-wrap justify-center items-center gap-5`}>
                     {/* Step 1 */}
                     {currentStep === 0 && (
                         <Fragment>
@@ -179,11 +178,14 @@ export const TravelQuote = () => {
 
                     {/* Step 5: Economy Selection */}
                     {currentStep === 4 && (
-                        <section className="w-[708px] bg-[#FDE5DE] rounded-[15px]">
-                            <Economy id="item1" show={showEconomy.item1} setShow={setShowEconomy} background="#FDE5DE" handleSubmit={handleSubmit} />
-                            <Economy id="item2" show={showEconomy.item2} setShow={setShowEconomy} handleSubmit={handleSubmit} />
-                            <Economy id="item3" show={showEconomy.item3} setShow={setShowEconomy} background="#FDE5DE" handleSubmit={handleSubmit} />
-                            <Economy id="item4" show={showEconomy.item4} setShow={setShowEconomy} handleSubmit={handleSubmit} />
+                        <section>
+                            <h1 className="max-w-[683px] text-2xl sm:text-4xl text-center font-semibold mb-6 vsm:mb-10">Travel Insurance Plans</h1>
+                            <div className="w-80 tiny:w-[350px] vsm:w-[420px] sm:w-[600px] md:w-[708px] bg-[#FDE5DE] rounded-[15px]">
+                                <Economy id="item1" show={showEconomy.item1} setShow={setShowEconomy} background="#FDE5DE" handleSubmit={handleSubmit} />
+                                <Economy id="item2" show={showEconomy.item2} setShow={setShowEconomy} handleSubmit={handleSubmit} />
+                                <Economy id="item3" show={showEconomy.item3} setShow={setShowEconomy} background="#FDE5DE" handleSubmit={handleSubmit} />
+                                <Economy id="item4" show={showEconomy.item4} setShow={setShowEconomy} handleSubmit={handleSubmit} />
+                            </div>
                         </section>
                     )}
                 </div>

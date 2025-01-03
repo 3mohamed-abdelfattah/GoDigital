@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 * {
-  /* outline: 1px solid darkred; */
+  outline: 1px solid darkred;
 }
 
 /* Global Style */

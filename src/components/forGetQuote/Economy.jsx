@@ -1,7 +1,7 @@
 // Icons
 import * as Icons from "@/utils/icons.util";
 
-export const Economy = ({ id, show, setShow, background = "white" }) => {
+export const Economy = ({ id, show, setShow, background = "white", handleSubmit }) => {
 
     // Show Full Economy options when clicked
     const handleShow = () => {
@@ -10,7 +10,7 @@ export const Economy = ({ id, show, setShow, background = "white" }) => {
 
     return (
         <article
-            className={`bg-${background} w-full overflow-hidden rounded-t-[15px]`}
+            className={`bg-${background} w-full overflow-hidden rounded-t-[15px] cursor-pointer transition-all`}
             style={{ boxShadow: "0px -2px 4px 0px rgba(65, 72, 225, 0.15)" }}
             onClick={handleShow}
         >
@@ -60,9 +60,9 @@ export const Economy = ({ id, show, setShow, background = "white" }) => {
                         </span>
                         <span className="flex flex-col justify-center gap-4 items-center text-lg text-center max-w-[133px]">
                             <Icons.TravelDelayIcon />
-                            <p className="flex flex-col justify-center items.center">
+                            <p className="flex flex-col justify-center items-center">
                                 Travel Delay Up to
-                                <span className="font.medium">195€</span>
+                                <span className="font-medium">195€</span>
                             </p>
                         </span>
                         <span className="flex flex-col justify-center gap-4 items-center text-lg text-center max-w-[133px]">
@@ -98,6 +98,17 @@ export const Economy = ({ id, show, setShow, background = "white" }) => {
                             </p>
                         </span>
                     </div>
+
+                    {/* Next Button */}
+                    <button
+                        onClick={handleSubmit}
+                        className="group flex items-center justify-between bg-white mx-auto w-4/5 my-5 px-5 pl-8 h-12 sm:h-14 text-sm vsm:text-base sm:text-lg font-medium border rounded-[27.5px] shadow-md transition-all text-black"
+                    >
+                        Next
+                        <span className="flex justify-center items-center bg-secondaryColor w-8 h-8 sm:w-10 sm:h-10 rounded-full transition-transform group-hover:rotate-45">
+                            <Icons.QuoteArrowIcon />
+                        </span>
+                    </button>
                 </>
             )}
         </article>

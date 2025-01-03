@@ -177,49 +177,39 @@ export const TravelQuote = () => {
                         </div>
                     )}
 
-                    {/* Step 5: Price Selection */}
+                    {/* Step 5: Economy Selection */}
                     {currentStep === 4 && (
-                        <div className="w-[708px] bg-[#FDE5DE] rounded-[15px]">
-
-                            <Economy id="item1" show={showEconomy.item1} setShow={setShowEconomy} />
-                            <Economy id="item2" show={showEconomy.item2} setShow={setShowEconomy} background="#FDE5DE" />
-                            <Economy id="item3" show={showEconomy.item3} setShow={setShowEconomy} />
-                            <Economy id="item4" show={showEconomy.item4} setShow={setShowEconomy} background="#FDE5DE" />
-
-                        </div>
+                        <section className="w-[708px] bg-[#FDE5DE] rounded-[15px]">
+                            <Economy id="item1" show={showEconomy.item1} setShow={setShowEconomy} background="#FDE5DE" handleSubmit={handleSubmit} />
+                            <Economy id="item2" show={showEconomy.item2} setShow={setShowEconomy} handleSubmit={handleSubmit} />
+                            <Economy id="item3" show={showEconomy.item3} setShow={setShowEconomy} background="#FDE5DE" handleSubmit={handleSubmit} />
+                            <Economy id="item4" show={showEconomy.item4} setShow={setShowEconomy} handleSubmit={handleSubmit} />
+                        </section>
                     )}
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex justify-center items-center gap-3 vsm:gap-10 my-5">
-                    {/* Previous Button */}
-                    <ActionButton
-                        text="Previous"
-                        iconPosition="left"
-                        onClick={handlePrevious}
-                        isDisabled={currentStep === 0}
-                    />
+                {currentStep < 4 && (
+                    <div className="flex justify-center items-center gap-3 vsm:gap-10 my-5">
+                        {/* Previous Button */}
+                        <ActionButton
+                            text="Previous"
+                            iconPosition="left"
+                            onClick={handlePrevious}
+                            isDisabled={currentStep === 0}
+                        />
 
-                    {/* Next or Submit Button */}
-                    {currentStep < totalSteps - 1 ? (
+                        {/* Next Button */}
                         <ActionButton
                             text="Next"
                             iconPosition="right"
                             onClick={handleNext}
                             isNext
                         />
-                    ) : (
-                        <ActionButton
-                            text="Submit"
-                            iconPosition="right"
-                            onClick={handleSubmit}
-                            isNext
-                            isDisabled={!isStepValid(currentStep)}
-                        />
-                    )}
-                </div>
-            </section >
-        </main >
+                    </div>
+                )}
+            </section>
+        </main>
     );
 };
 
